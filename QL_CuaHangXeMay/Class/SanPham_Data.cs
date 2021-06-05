@@ -39,7 +39,7 @@ namespace QL_CuaHangXeMay.Class
         }
 
         public static SanPham Get_SanPham(int maSP)
-        {
+        {//
             try
             {
                 using (DataClassesQLDataContext dt = new DataClassesQLDataContext())
