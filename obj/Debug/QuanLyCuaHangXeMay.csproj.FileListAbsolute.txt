@@ -1,0 +1,9 @@
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\bin\Debug\QuanLyCuaHangXeMay.exe.config
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\bin\Debug\QuanLyCuaHangXeMay.exe
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\bin\Debug\QuanLyCuaHangXeMay.pdb
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\obj\Debug\QuanLyCuaHangXeMay.csprojAssemblyReference.cache
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\obj\Debug\QuanLyCuaHangXeMay.Properties.Resources.resources
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\obj\Debug\QuanLyCuaHangXeMay.csproj.GenerateResource.cache
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\obj\Debug\QuanLyCuaHangXeMay.csproj.CoreCompileInputs.cache
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\obj\Debug\QuanLyCuaHangXeMay.exe
+C:\Users\MyPC\Source\Repos\thuctapchuyenmon\obj\Debug\QuanLyCuaHangXeMay.pdb
