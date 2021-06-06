@@ -16,6 +16,7 @@ namespace QuanLy_CuaHang.SanPham
     {
         private DataTable iDataSource = null;
 
+        DataClassesQLDataContext db = new DataClassesQLDataContext();
         public UC_SanPham_TT()
         {
             InitializeComponent();
@@ -26,10 +27,9 @@ namespace QuanLy_CuaHang.SanPham
 
             dgv_SanPham.Columns[0].HeaderText = "Mã";
             dgv_SanPham.Columns[1].HeaderText = "Tên";
-            dgv_SanPham.Columns[2].HeaderText = "Màu";
-            dgv_SanPham.Columns[3].HeaderText = "Loại";
-            dgv_SanPham.Columns[4].HeaderText = "Hãng";
-            dgv_SanPham.Columns[5].HeaderText = "Số lượng";
+            dgv_SanPham.Columns[2].HeaderText = "Loại";
+            dgv_SanPham.Columns[3].HeaderText = "Hãng";
+            dgv_SanPham.Columns[4].HeaderText = "Số lượng";
 
             dgv_SanPham.Columns[0].Width = 65;
             dgv_SanPham.Columns[1].Width = 300;
@@ -122,7 +122,6 @@ namespace QuanLy_CuaHang.SanPham
 
         private void Filter_Data()
         {
-            DataClassesQLDataContext db = new DataClassesQLDataContext();
             DataTable dt;
             if (cbb_SP.SelectedIndex > -1 && ckb_LocSP.Checked == true && cbb_LoaiSP.SelectedIndex < 0)
             {
@@ -198,6 +197,16 @@ namespace QuanLy_CuaHang.SanPham
         }
 
         private void txt_Tim_SP_TextChanged(object sender, EventArgs e)
+        {
+            dgv_SanPham.DataSource = db.search_SP(txt_Tim_SP.Text.ToString());
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

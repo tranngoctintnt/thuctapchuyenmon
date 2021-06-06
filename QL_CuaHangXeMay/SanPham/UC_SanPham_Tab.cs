@@ -26,14 +26,14 @@ namespace QuanLy_CuaHang.SanPham
                     this.tab_SanPham.Controls.Clear();
                     this.tab_SanPham.Controls.Add(new UC_SanPham_TT());
                     break;
-                //case 1:
-                //    this.tab_GiaSP.Controls.Clear();
-                //    this.tab_GiaSP.Controls.Add(new UC_GiaSP_TT());
-                //    break;
-                //case 2:
-                //    this.tab_HangSX_NCC.Controls.Clear();
-                //    this.tab_HangSX_NCC.Controls.Add(new UC_NhaCC_HangSX());
-                //    break;
+                case 1:
+                    this.tab_GiaSP.Controls.Clear();
+                    this.tab_GiaSP.Controls.Add(new UC_GiaSP_TT());
+                    break;
+                case 2:
+                    this.tab_HangSX_NCC.Controls.Clear();
+                    this.tab_HangSX_NCC.Controls.Add(new UC_NhaCC_HangSX());
+                    break;
                 case 3:
                     this.tab_DanhM_LoaiSP.Controls.Clear();
                     this.tab_DanhM_LoaiSP.Controls.Add(new UC_DanhM_LoaiSP());

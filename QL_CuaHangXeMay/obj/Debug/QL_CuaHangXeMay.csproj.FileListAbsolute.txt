@@ -24,3 +24,12 @@ C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_Cua
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.SanPham.UC_SanPham_TT.resources
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.SanPham.Dialog.DAL_SanPham.resources
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.SanPham.Dialog.DAL_HangSX.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.SanPham.Dialog.DAL_NhaCungCap.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.SanPham.UC_NhaCC_HangSX.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.SanPham.Dialog.DAL_GiaSP.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.SanPham.UC_GiaSP_TT.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.KhachHang1.Dialog.DAL_KhachHang.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.KhachHang.UC_KHACHHANG.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.KhachHang1.UC_TT_KhachHang.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.QL_NguoiDung.Form_ThemNguoiDung.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.QL_NguoiDung.UC_QLNguoiDung.resources

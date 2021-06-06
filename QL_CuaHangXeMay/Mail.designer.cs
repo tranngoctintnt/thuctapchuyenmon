@@ -30,9 +30,9 @@ namespace QuanLy_CuaHang
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mail));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtFile = new Guna.UI.WinForms.GunaTextBox();
             this.txtMail = new Guna.UI.WinForms.GunaTextBox();
             this.btnSend = new Guna.UI.WinForms.GunaButton();
@@ -42,6 +42,8 @@ namespace QuanLy_CuaHang
             this.ten_hk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mail_kh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sdt_kh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_Tim_KH = new Guna.UI.WinForms.GunaCircleButton();
+            this.txt_Tim_KH = new Guna.UI.WinForms.GunaTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKH)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +57,13 @@ namespace QuanLy_CuaHang
             this.txtFile.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtFile.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtFile.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtFile.Location = new System.Drawing.Point(134, 43);
+            this.txtFile.Location = new System.Drawing.Point(59, 45);
+            this.txtFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFile.Name = "txtFile";
             this.txtFile.PasswordChar = '\0';
             this.txtFile.Radius = 10;
-            this.txtFile.Size = new System.Drawing.Size(298, 39);
+            this.txtFile.SelectedText = "";
+            this.txtFile.Size = new System.Drawing.Size(397, 48);
             this.txtFile.TabIndex = 0;
             this.txtFile.Text = "File";
             // 
@@ -73,11 +77,13 @@ namespace QuanLy_CuaHang
             this.txtMail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtMail.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMail.Location = new System.Drawing.Point(134, 130);
+            this.txtMail.Location = new System.Drawing.Point(59, 152);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMail.Name = "txtMail";
             this.txtMail.PasswordChar = '\0';
             this.txtMail.Radius = 10;
-            this.txtMail.Size = new System.Drawing.Size(298, 42);
+            this.txtMail.SelectedText = "";
+            this.txtMail.Size = new System.Drawing.Size(397, 52);
             this.txtMail.TabIndex = 1;
             this.txtMail.Text = "Mail";
             // 
@@ -88,12 +94,14 @@ namespace QuanLy_CuaHang
             this.btnSend.BackColor = System.Drawing.Color.Transparent;
             this.btnSend.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnSend.BorderColor = System.Drawing.Color.Black;
+            this.btnSend.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSend.FocusedColor = System.Drawing.Color.Empty;
             this.btnSend.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSend.ForeColor = System.Drawing.Color.White;
             this.btnSend.Image = ((System.Drawing.Image)(resources.GetObject("btnSend.Image")));
             this.btnSend.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnSend.Location = new System.Drawing.Point(478, 130);
+            this.btnSend.Location = new System.Drawing.Point(517, 152);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSend.Name = "btnSend";
             this.btnSend.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnSend.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -101,7 +109,7 @@ namespace QuanLy_CuaHang
             this.btnSend.OnHoverImage = null;
             this.btnSend.OnPressedColor = System.Drawing.Color.Black;
             this.btnSend.Radius = 10;
-            this.btnSend.Size = new System.Drawing.Size(129, 42);
+            this.btnSend.Size = new System.Drawing.Size(172, 52);
             this.btnSend.TabIndex = 3;
             this.btnSend.Text = "Send";
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
@@ -113,12 +121,14 @@ namespace QuanLy_CuaHang
             this.btnAttach.BackColor = System.Drawing.Color.Transparent;
             this.btnAttach.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.btnAttach.BorderColor = System.Drawing.Color.Black;
+            this.btnAttach.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnAttach.FocusedColor = System.Drawing.Color.Empty;
             this.btnAttach.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAttach.ForeColor = System.Drawing.Color.White;
             this.btnAttach.Image = ((System.Drawing.Image)(resources.GetObject("btnAttach.Image")));
             this.btnAttach.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAttach.Location = new System.Drawing.Point(478, 43);
+            this.btnAttach.Location = new System.Drawing.Point(517, 45);
+            this.btnAttach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAttach.Name = "btnAttach";
             this.btnAttach.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAttach.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -126,7 +136,7 @@ namespace QuanLy_CuaHang
             this.btnAttach.OnHoverImage = null;
             this.btnAttach.OnPressedColor = System.Drawing.Color.Black;
             this.btnAttach.Radius = 10;
-            this.btnAttach.Size = new System.Drawing.Size(129, 39);
+            this.btnAttach.Size = new System.Drawing.Size(172, 48);
             this.btnAttach.TabIndex = 2;
             this.btnAttach.Text = "Attach";
             this.btnAttach.Click += new System.EventHandler(this.btnAttach_Click);
@@ -136,43 +146,45 @@ namespace QuanLy_CuaHang
             this.dgvKH.AllowUserToAddRows = false;
             this.dgvKH.AllowUserToDeleteRows = false;
             this.dgvKH.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvKH.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvKH.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvKH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKH.BackgroundColor = System.Drawing.Color.White;
             this.dgvKH.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvKH.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvKH.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvKH.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvKH.ColumnHeadersHeight = 21;
             this.dgvKH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ma_kh,
             this.ten_hk,
             this.mail_kh,
             this.sdt_kh});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvKH.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvKH.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvKH.EnableHeadersVisualStyles = false;
             this.dgvKH.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvKH.Location = new System.Drawing.Point(-2, 194);
+            this.dgvKH.Location = new System.Drawing.Point(-3, 239);
+            this.dgvKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvKH.Name = "dgvKH";
             this.dgvKH.ReadOnly = true;
             this.dgvKH.RowHeadersVisible = false;
+            this.dgvKH.RowHeadersWidth = 51;
             this.dgvKH.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKH.Size = new System.Drawing.Size(825, 206);
+            this.dgvKH.Size = new System.Drawing.Size(1100, 254);
             this.dgvKH.TabIndex = 4;
             this.dgvKH.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dgvKH.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -202,6 +214,7 @@ namespace QuanLy_CuaHang
             // 
             this.ma_kh.DataPropertyName = "ma_kh";
             this.ma_kh.HeaderText = "Mã Khách Hàng";
+            this.ma_kh.MinimumWidth = 6;
             this.ma_kh.Name = "ma_kh";
             this.ma_kh.ReadOnly = true;
             // 
@@ -209,6 +222,7 @@ namespace QuanLy_CuaHang
             // 
             this.ten_hk.DataPropertyName = "ten_hk";
             this.ten_hk.HeaderText = "Tên Khách Hàng";
+            this.ten_hk.MinimumWidth = 6;
             this.ten_hk.Name = "ten_hk";
             this.ten_hk.ReadOnly = true;
             // 
@@ -216,6 +230,7 @@ namespace QuanLy_CuaHang
             // 
             this.mail_kh.DataPropertyName = "mail_kh";
             this.mail_kh.HeaderText = "Mail";
+            this.mail_kh.MinimumWidth = 6;
             this.mail_kh.Name = "mail_kh";
             this.mail_kh.ReadOnly = true;
             // 
@@ -223,20 +238,69 @@ namespace QuanLy_CuaHang
             // 
             this.sdt_kh.DataPropertyName = "sdt_kh";
             this.sdt_kh.HeaderText = "Số Điện Thoại";
+            this.sdt_kh.MinimumWidth = 6;
             this.sdt_kh.Name = "sdt_kh";
             this.sdt_kh.ReadOnly = true;
             // 
+            // btn_Tim_KH
+            // 
+            this.btn_Tim_KH.AnimationHoverSpeed = 0.07F;
+            this.btn_Tim_KH.AnimationSpeed = 0.03F;
+            this.btn_Tim_KH.BaseColor = System.Drawing.Color.White;
+            this.btn_Tim_KH.BorderColor = System.Drawing.Color.Black;
+            this.btn_Tim_KH.BorderSize = 1;
+            this.btn_Tim_KH.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btn_Tim_KH.FocusedColor = System.Drawing.Color.Empty;
+            this.btn_Tim_KH.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Tim_KH.ForeColor = System.Drawing.Color.White;
+            this.btn_Tim_KH.Image = ((System.Drawing.Image)(resources.GetObject("btn_Tim_KH.Image")));
+            this.btn_Tim_KH.ImageSize = new System.Drawing.Size(20, 20);
+            this.btn_Tim_KH.Location = new System.Drawing.Point(1033, 50);
+            this.btn_Tim_KH.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Tim_KH.Name = "btn_Tim_KH";
+            this.btn_Tim_KH.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btn_Tim_KH.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btn_Tim_KH.OnHoverForeColor = System.Drawing.Color.White;
+            this.btn_Tim_KH.OnHoverImage = null;
+            this.btn_Tim_KH.OnPressedColor = System.Drawing.Color.Black;
+            this.btn_Tim_KH.Size = new System.Drawing.Size(47, 43);
+            this.btn_Tim_KH.TabIndex = 47;
+            // 
+            // txt_Tim_KH
+            // 
+            this.txt_Tim_KH.BackColor = System.Drawing.Color.Transparent;
+            this.txt_Tim_KH.BaseColor = System.Drawing.Color.White;
+            this.txt_Tim_KH.BorderColor = System.Drawing.Color.Silver;
+            this.txt_Tim_KH.BorderSize = 1;
+            this.txt_Tim_KH.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Tim_KH.FocusedBaseColor = System.Drawing.Color.White;
+            this.txt_Tim_KH.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txt_Tim_KH.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txt_Tim_KH.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_Tim_KH.Location = new System.Drawing.Point(817, 53);
+            this.txt_Tim_KH.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Tim_KH.Name = "txt_Tim_KH";
+            this.txt_Tim_KH.PasswordChar = '\0';
+            this.txt_Tim_KH.Radius = 12;
+            this.txt_Tim_KH.SelectedText = "";
+            this.txt_Tim_KH.Size = new System.Drawing.Size(213, 37);
+            this.txt_Tim_KH.TabIndex = 46;
+            this.txt_Tim_KH.TextChanged += new System.EventHandler(this.txt_Tim_KH_TextChanged);
+            // 
             // Mail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(821, 523);
+            this.ClientSize = new System.Drawing.Size(1095, 644);
+            this.Controls.Add(this.btn_Tim_KH);
+            this.Controls.Add(this.txt_Tim_KH);
             this.Controls.Add(this.dgvKH);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnAttach);
             this.Controls.Add(this.txtMail);
             this.Controls.Add(this.txtFile);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Mail";
             this.Text = "Mail";
             this.Load += new System.EventHandler(this.Mail_Load);
@@ -256,5 +320,7 @@ namespace QuanLy_CuaHang
         private System.Windows.Forms.DataGridViewTextBoxColumn ten_hk;
         private System.Windows.Forms.DataGridViewTextBoxColumn mail_kh;
         private System.Windows.Forms.DataGridViewTextBoxColumn sdt_kh;
+        private Guna.UI.WinForms.GunaCircleButton btn_Tim_KH;
+        private Guna.UI.WinForms.GunaTextBox txt_Tim_KH;
     }
 }

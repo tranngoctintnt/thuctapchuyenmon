@@ -1,4 +1,5 @@
 ﻿using QL_CuaHangXeMay;
+using QL_CuaHangXeMay.Class;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -81,6 +82,22 @@ namespace QuanLy_CuaHang
             int i;
             i = dgvKH.CurrentRow.Index;
             txtMail.Text = dgvKH.Rows[i].Cells[2].Value.ToString();
+        }
+
+        private void txt_Tim_KH_TextChanged(object sender, EventArgs e)
+        {
+            if (txt_Tim_KH.Text.Trim() != "")
+            {
+                dgvKH.DataSource = KhachHang_Data.Search_KhachHang(txt_Tim_KH.Text.ToString());
+            }
+            else
+            {
+                try
+                {
+                    dgvKH.DataSource = KhachHang_Data.Get_KhachHangList();
+                }
+                catch (Exception) { }
+            }
         }
     }
 }

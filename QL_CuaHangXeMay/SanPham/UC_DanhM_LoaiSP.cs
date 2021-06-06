@@ -60,8 +60,8 @@ namespace QuanLy_CuaHang.SanPham
         {
             if (Get_IdDM() != null)
             {
-                Dialog.DAL_DanhMuc hangSX = new Dialog.DAL_DanhMuc(int.Parse(Get_IdDM()));
-                hangSX.ShowDialog();
+                Dialog.DAL_DanhMuc dm = new Dialog.DAL_DanhMuc(int.Parse(Get_IdDM()));
+                dm.ShowDialog();
 
                 try
                 {

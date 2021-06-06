@@ -47,7 +47,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             {
                 QL_CuaHangXeMay.SanPham sanPham = SanPham_Data.Get_SanPham(this.ma_SP);
                 txt_Ma_SP.Text = sanPham.ma_SP.ToString();
-                txt_Ten_SP.Text = sanPham.mau_SP.ToString();
+                txt_Ten_SP.Text = sanPham.Ten_SP.ToString();
                 cbb_DanhMuc.SelectedValue = sanPham.ma_DM;
                 cbb_Hang.SelectedValue = sanPham.ma_Hang;
                 cbb_Loai.SelectedValue = sanPham.ma_Loai;
@@ -63,7 +63,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
                 SanPham_Data.Add_SanPham(new QL_CuaHangXeMay.SanPham()
                 {
                     ma_SP = int.Parse(txt_Ma_SP.Text.Trim()),
-                    mau_SP = txt_Ten_SP.Text.ToString(),
+                    Ten_SP = txt_Ten_SP.Text.ToString(),
                     ma_DM = int.Parse(cbb_DanhMuc.SelectedValue.ToString()),
                     ma_Hang = int.Parse(cbb_Hang.SelectedValue.ToString()),
                     ma_Loai = int.Parse(cbb_Loai.SelectedValue.ToString()),
@@ -75,7 +75,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
                 SanPham_Data.Update_SanPham(new QL_CuaHangXeMay.SanPham()
                 {
                     ma_SP = int.Parse(txt_Ma_SP.Text.Trim()),
-                    mau_SP = txt_Ten_SP.Text.ToString(),
+                    Ten_SP = txt_Ten_SP.Text.ToString(),
                     ma_DM = int.Parse(cbb_DanhMuc.SelectedValue.ToString()),
                     ma_Hang = int.Parse(cbb_Hang.SelectedValue.ToString()),
                     ma_Loai = int.Parse(cbb_Loai.SelectedValue.ToString()),

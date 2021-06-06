@@ -55,7 +55,7 @@ namespace QuanLy_CuaHang.SanPham
             this.ckb_LocSP.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.ckb_LocSP.FillColor = System.Drawing.Color.White;
             this.ckb_LocSP.Location = new System.Drawing.Point(115, 21);
-            this.ckb_LocSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckb_LocSP.Margin = new System.Windows.Forms.Padding(4);
             this.ckb_LocSP.Name = "ckb_LocSP";
             this.ckb_LocSP.Size = new System.Drawing.Size(118, 20);
             this.ckb_LocSP.TabIndex = 38;
@@ -71,6 +71,7 @@ namespace QuanLy_CuaHang.SanPham
             this.label2.Size = new System.Drawing.Size(35, 17);
             this.label2.TabIndex = 37;
             this.label2.Text = "Loại";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -81,13 +82,14 @@ namespace QuanLy_CuaHang.SanPham
             this.label1.Size = new System.Drawing.Size(42, 17);
             this.label1.TabIndex = 36;
             this.label1.Text = "Hãng";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cbb_LoaiSP
             // 
             this.cbb_LoaiSP.Enabled = false;
             this.cbb_LoaiSP.FormattingEnabled = true;
             this.cbb_LoaiSP.Location = new System.Drawing.Point(559, 21);
-            this.cbb_LoaiSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_LoaiSP.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_LoaiSP.Name = "cbb_LoaiSP";
             this.cbb_LoaiSP.Size = new System.Drawing.Size(160, 24);
             this.cbb_LoaiSP.TabIndex = 35;
@@ -98,7 +100,7 @@ namespace QuanLy_CuaHang.SanPham
             this.cbb_SP.Enabled = false;
             this.cbb_SP.FormattingEnabled = true;
             this.cbb_SP.Location = new System.Drawing.Point(327, 21);
-            this.cbb_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_SP.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_SP.Name = "cbb_SP";
             this.cbb_SP.Size = new System.Drawing.Size(160, 24);
             this.cbb_SP.TabIndex = 34;
@@ -116,7 +118,7 @@ namespace QuanLy_CuaHang.SanPham
             this.txt_Tim_SP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_Tim_SP.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Tim_SP.Location = new System.Drawing.Point(887, 16);
-            this.txt_Tim_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Tim_SP.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Tim_SP.Name = "txt_Tim_SP";
             this.txt_Tim_SP.PasswordChar = '\0';
             this.txt_Tim_SP.Radius = 12;
@@ -156,7 +158,7 @@ namespace QuanLy_CuaHang.SanPham
             this.dgv_SanPham.EnableHeadersVisualStyles = false;
             this.dgv_SanPham.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_SanPham.Location = new System.Drawing.Point(91, 64);
-            this.dgv_SanPham.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_SanPham.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_SanPham.Name = "dgv_SanPham";
             this.dgv_SanPham.ReadOnly = true;
             this.dgv_SanPham.RowHeadersVisible = false;
@@ -202,7 +204,7 @@ namespace QuanLy_CuaHang.SanPham
             this.btn_Tim_SP.Image = ((System.Drawing.Image)(resources.GetObject("btn_Tim_SP.Image")));
             this.btn_Tim_SP.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Tim_SP.Location = new System.Drawing.Point(1103, 14);
-            this.btn_Tim_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Tim_SP.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Tim_SP.Name = "btn_Tim_SP";
             this.btn_Tim_SP.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Tim_SP.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -226,7 +228,7 @@ namespace QuanLy_CuaHang.SanPham
             this.btn_LamMoi_SP.Image = ((System.Drawing.Image)(resources.GetObject("btn_LamMoi_SP.Image")));
             this.btn_LamMoi_SP.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_LamMoi_SP.Location = new System.Drawing.Point(16, 165);
-            this.btn_LamMoi_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_LamMoi_SP.Margin = new System.Windows.Forms.Padding(4);
             this.btn_LamMoi_SP.Name = "btn_LamMoi_SP";
             this.btn_LamMoi_SP.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_LamMoi_SP.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -251,7 +253,7 @@ namespace QuanLy_CuaHang.SanPham
             this.btn_Xoa_SP.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa_SP.Image")));
             this.btn_Xoa_SP.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Xoa_SP.Location = new System.Drawing.Point(16, 114);
-            this.btn_Xoa_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Xoa_SP.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Xoa_SP.Name = "btn_Xoa_SP";
             this.btn_Xoa_SP.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Xoa_SP.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -276,7 +278,7 @@ namespace QuanLy_CuaHang.SanPham
             this.btn_Sua_SP.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua_SP.Image")));
             this.btn_Sua_SP.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Sua_SP.Location = new System.Drawing.Point(16, 64);
-            this.btn_Sua_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Sua_SP.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Sua_SP.Name = "btn_Sua_SP";
             this.btn_Sua_SP.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Sua_SP.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -301,7 +303,7 @@ namespace QuanLy_CuaHang.SanPham
             this.btn_Them_SP.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them_SP.Image")));
             this.btn_Them_SP.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Them_SP.Location = new System.Drawing.Point(16, 14);
-            this.btn_Them_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Them_SP.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them_SP.Name = "btn_Them_SP";
             this.btn_Them_SP.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Them_SP.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -328,7 +330,7 @@ namespace QuanLy_CuaHang.SanPham
             this.Controls.Add(this.btn_Xoa_SP);
             this.Controls.Add(this.btn_Sua_SP);
             this.Controls.Add(this.btn_Them_SP);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UC_SanPham_TT";
             this.Size = new System.Drawing.Size(1167, 631);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_SanPham)).EndInit();

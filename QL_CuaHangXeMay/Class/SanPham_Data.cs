@@ -77,7 +77,7 @@ namespace QL_CuaHangXeMay.Class
                 using (DataClassesQLDataContext dt = new DataClassesQLDataContext())
                 {
                     SanPham san_Pham = dt.SanPhams.Where(p => p.ma_SP == sanPham.ma_SP).FirstOrDefault();
-                    san_Pham.mau_SP = sanPham.mau_SP;
+                    san_Pham.Ten_SP = sanPham.Ten_SP;
                     san_Pham.ma_Loai = sanPham.ma_Loai;
                     san_Pham.ma_Hang = sanPham.ma_Hang;
                     san_Pham.ma_DM = sanPham.ma_DM;

@@ -69,7 +69,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.nbr_Soluong.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.nbr_Soluong.ForeColor = System.Drawing.Color.Black;
             this.nbr_Soluong.Location = new System.Drawing.Point(100, 106);
-            this.nbr_Soluong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nbr_Soluong.Margin = new System.Windows.Forms.Padding(4);
             this.nbr_Soluong.Maximum = ((long)(9999999));
             this.nbr_Soluong.Minimum = ((long)(0));
             this.nbr_Soluong.Name = "nbr_Soluong";
@@ -91,12 +91,12 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(58, 158);
+            this.label4.Location = new System.Drawing.Point(20, 161);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 17);
+            this.label4.Size = new System.Drawing.Size(72, 17);
             this.label4.TabIndex = 46;
-            this.label4.Text = "Tên";
+            this.label4.Text = "Danh mục";
             // 
             // label3
             // 
@@ -111,12 +111,12 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 71);
+            this.label2.Location = new System.Drawing.Point(57, 72);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 17);
+            this.label2.Size = new System.Drawing.Size(33, 17);
             this.label2.TabIndex = 44;
-            this.label2.Text = "Màu";
+            this.label2.Text = "Tên";
             // 
             // txt_Ten_SP
             // 
@@ -130,7 +130,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.txt_Ten_SP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_Ten_SP.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Ten_SP.Location = new System.Drawing.Point(100, 62);
-            this.txt_Ten_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Ten_SP.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Ten_SP.Name = "txt_Ten_SP";
             this.txt_Ten_SP.PasswordChar = '\0';
             this.txt_Ten_SP.Radius = 12;
@@ -160,7 +160,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.txt_Ma_SP.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txt_Ma_SP.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Ma_SP.Location = new System.Drawing.Point(100, 17);
-            this.txt_Ma_SP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Ma_SP.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Ma_SP.Name = "txt_Ma_SP";
             this.txt_Ma_SP.PasswordChar = '\0';
             this.txt_Ma_SP.Radius = 12;
@@ -173,7 +173,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             // 
             this.cbb_Hang.FormattingEnabled = true;
             this.cbb_Hang.Location = new System.Drawing.Point(100, 224);
-            this.cbb_Hang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_Hang.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_Hang.Name = "cbb_Hang";
             this.cbb_Hang.Size = new System.Drawing.Size(212, 24);
             this.cbb_Hang.TabIndex = 40;
@@ -182,7 +182,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             // 
             this.cbb_Loai.FormattingEnabled = true;
             this.cbb_Loai.Location = new System.Drawing.Point(100, 191);
-            this.cbb_Loai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_Loai.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_Loai.Name = "cbb_Loai";
             this.cbb_Loai.Size = new System.Drawing.Size(212, 24);
             this.cbb_Loai.TabIndex = 39;
@@ -191,7 +191,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             // 
             this.cbb_DanhMuc.FormattingEnabled = true;
             this.cbb_DanhMuc.Location = new System.Drawing.Point(100, 158);
-            this.cbb_DanhMuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbb_DanhMuc.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_DanhMuc.Name = "cbb_DanhMuc";
             this.cbb_DanhMuc.Size = new System.Drawing.Size(212, 24);
             this.cbb_DanhMuc.TabIndex = 38;
@@ -211,7 +211,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.btn_Huy.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Huy.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Huy.Location = new System.Drawing.Point(201, 268);
-            this.btn_Huy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Huy.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Huy.Name = "btn_Huy";
             this.btn_Huy.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Huy.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -240,7 +240,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.btn_Luu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Luu.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Luu.Location = new System.Drawing.Point(101, 268);
-            this.btn_Luu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Luu.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Luu.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -268,7 +268,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.btn_Them_Hang.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them_Hang.Image")));
             this.btn_Them_Hang.ImageSize = new System.Drawing.Size(18, 18);
             this.btn_Them_Hang.Location = new System.Drawing.Point(321, 225);
-            this.btn_Them_Hang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Them_Hang.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them_Hang.Name = "btn_Them_Hang";
             this.btn_Them_Hang.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Them_Hang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -293,7 +293,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.btn_Them_Loai.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them_Loai.Image")));
             this.btn_Them_Loai.ImageSize = new System.Drawing.Size(18, 18);
             this.btn_Them_Loai.Location = new System.Drawing.Point(321, 191);
-            this.btn_Them_Loai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Them_Loai.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them_Loai.Name = "btn_Them_Loai";
             this.btn_Them_Loai.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Them_Loai.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -318,7 +318,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.btn_Them_DM.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them_DM.Image")));
             this.btn_Them_DM.ImageSize = new System.Drawing.Size(18, 18);
             this.btn_Them_DM.Location = new System.Drawing.Point(321, 159);
-            this.btn_Them_DM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Them_DM.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them_DM.Name = "btn_Them_DM";
             this.btn_Them_DM.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Them_DM.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -351,7 +351,7 @@ namespace QuanLy_CuaHang.SanPham.Dialog
             this.Controls.Add(this.cbb_Hang);
             this.Controls.Add(this.cbb_Loai);
             this.Controls.Add(this.cbb_DanhMuc);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DAL_SanPham";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin sản phẩm";

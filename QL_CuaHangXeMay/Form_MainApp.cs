@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI.WinForms;
 using QL_CuaHangXeMay;
+using QL_CuaHangXeMay.Class;
 using YoutubeMacDemo;
 
 namespace QuanLy_CuaHang
@@ -35,14 +36,14 @@ namespace QuanLy_CuaHang
 
         private void PhanQuyen()
         {
-            //List<Entities_Data.CT_Quyen> lst = Entities_Data.NguoiDung_Data.Get_QuyenList(this.ma_NV);
-            //if (lst[0].stas == false) this.btn_SANPHAM.Visible = false;
-            //if (lst[1].stas == false) this.btn_HOADON.Visible = false;
-            //if (lst[2].stas == false) this.btn_THONGKE.Visible = false;
-            //if (lst[3].stas == false) this.btn_KHACHHANG.Visible = false;
-            //if (lst[4].stas == false) this.btn_NGUOIDUNG.Visible = false;
-            //btn_DATA.Enabled = false;
-            //btn_DATA.Visible = false;
+            List<CT_Quyen> lst = NguoiDung_Data.Get_QuyenList(this.ma_NV);
+            if (lst[0].stas == false) this.btn_SANPHAM.Visible = false;
+            if (lst[1].stas == false) this.btn_HOADON.Visible = false;
+            if (lst[2].stas == false) this.btn_THONGKE.Visible = false;
+            if (lst[3].stas == false) this.btn_KHACHHANG.Visible = false;
+            if (lst[4].stas == false) this.btn_NGUOIDUNG.Visible = false;
+            btn_DATA.Enabled = false;
+            btn_DATA.Visible = false;
         }
 
         private void gunaTileButton2_Click(object sender, EventArgs e)
@@ -77,14 +78,14 @@ namespace QuanLy_CuaHang
                     pnl_NoiDung.Controls.Add(new SanPham.UC_SanPham_Tab());
                     pnl_Select.Location = new Point(0, btn_SANPHAM.Location.Y + 183);
                     break;
-                    //case "btn_KHACHHANG":
-                    //    pnl_NoiDung.Controls.Add(new KhachHang.UC_KHACHHANG());
-                    //    pnl_Select.Location = new Point(0, btn_KHACHHANG.Location.Y+183);
-                    //    break;
-                    //case "btn_NGUOIDUNG":                    
-                    //    pnl_NoiDung.Controls.Add(new QL_NguoiDung.UC_QLNguoiDung());
-                    //    pnl_Select.Location = new Point(0, btn_NGUOIDUNG.Location.Y+183);
-                    //    break;
+                case "btn_KHACHHANG":
+                    pnl_NoiDung.Controls.Add(new KhachHang.UC_KHACHHANG());
+                    pnl_Select.Location = new Point(0, btn_KHACHHANG.Location.Y + 183);
+                    break;
+                case "btn_NGUOIDUNG":
+                    pnl_NoiDung.Controls.Add(new QL_NguoiDung.UC_QLNguoiDung());
+                    pnl_Select.Location = new Point(0, btn_NGUOIDUNG.Location.Y + 183);
+                    break;
                     //case "btn_DATA":
                     //    pnl_NoiDung.Controls.Add(new QL_SaoLuu.UC_QLSaoLuu());
                     //    pnl_Select.Location = new Point(0, btn_DATA.Location.Y+183);
