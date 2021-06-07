@@ -45,6 +45,24 @@
     <Reference Include="Intersoft.Crosslight.UI.DataVisualization, Version=6.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
       <HintPath>..\packages\Intersoft.Crosslight.UI.DataVisualization.6.0.5000.975\lib\Intersoft.Crosslight.UI.DataVisualization.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -64,6 +82,7 @@
     <Compile Include="Class\DanhMuc_Data.cs" />
     <Compile Include="Class\GiaSP_Data.cs" />
     <Compile Include="Class\HangSanXuat_Data.cs" />
+    <Compile Include="Class\HD_Ban.cs" />
     <Compile Include="Class\KhachHang_Data.cs" />
     <Compile Include="Class\LoaiSP_Data.cs" />
     <Compile Include="Class\MD5_Data.cs" />
@@ -86,6 +105,52 @@
     </Compile>
     <Compile Include="Form_MainApp.designer.cs">
       <DependentUpon>Form_MainApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\DataSetHD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetHD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\DataSetPN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPN.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\HD_BanHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HoaDon\HD_BanHang.designer.cs">
+      <DependentUpon>HD_BanHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\HD_PhieuNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HoaDon\HD_PhieuNhap.designer.cs">
+      <DependentUpon>HD_PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\Lap_HD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon\Lap_HD.designer.cs">
+      <DependentUpon>Lap_HD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\UC_HoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HoaDon\UC_HoaDon.designer.cs">
+      <DependentUpon>UC_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\ViewPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon\ViewPN.Designer.cs">
+      <DependentUpon>ViewPN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\ViewTTHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon\ViewTTHD.Designer.cs">
+      <DependentUpon>ViewTTHD.cs</DependentUpon>
     </Compile>
     <Compile Include="KhachHang\Dialog\DAL_KhachHang.cs">
       <SubType>Form</SubType>
@@ -198,6 +263,7 @@
     <Compile Include="SaoLuu\UC_SaoLuu.designer.cs">
       <DependentUpon>UC_SaoLuu.cs</DependentUpon>
     </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="UC_Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -209,6 +275,26 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_MainApp.resx">
       <DependentUpon>Form_MainApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\HD_BanHang.resx">
+      <DependentUpon>HD_BanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\HD_PhieuNhap.resx">
+      <DependentUpon>HD_PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\Lap_HD.resx">
+      <DependentUpon>Lap_HD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\ReportHD.rdlc" />
+    <EmbeddedResource Include="HoaDon\Report_PhieuNhap.rdlc" />
+    <EmbeddedResource Include="HoaDon\UC_HoaDon.resx">
+      <DependentUpon>UC_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\ViewPN.resx">
+      <DependentUpon>ViewPN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\ViewTTHD.resx">
+      <DependentUpon>ViewTTHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang\Dialog\DAL_KhachHang.resx">
       <DependentUpon>DAL_KhachHang.cs</DependentUpon>
@@ -284,6 +370,28 @@
     <None Include="DataClassesQL.dbml.layout">
       <DependentUpon>DataClassesQL.dbml</DependentUpon>
     </None>
+    <None Include="HoaDon\DataSetHD.xsc">
+      <DependentUpon>DataSetHD.xsd</DependentUpon>
+    </None>
+    <None Include="HoaDon\DataSetHD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetHD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HoaDon\DataSetHD.xss">
+      <DependentUpon>DataSetHD.xsd</DependentUpon>
+    </None>
+    <None Include="HoaDon\DataSetPN.xsc">
+      <DependentUpon>DataSetPN.xsd</DependentUpon>
+    </None>
+    <None Include="HoaDon\DataSetPN.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPN.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="HoaDon\DataSetPN.xss">
+      <DependentUpon>DataSetPN.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -302,8 +410,22 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="HoaDon\" />
     <Folder Include="ThongKe\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
