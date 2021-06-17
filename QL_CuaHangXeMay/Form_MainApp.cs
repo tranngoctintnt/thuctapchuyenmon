@@ -70,10 +70,10 @@ namespace QuanLy_CuaHang
                     pnl_NoiDung.Controls.Add(new HoaDon.UC_HoaDon());
                     pnl_Select.Location = new Point(0, btn_HOADON.Location.Y + 183);
                     break;
-                //case "btn_THONGKE":
-                //    pnl_NoiDung.Controls.Add(new ThongKe.UC_ThongKe_Tab());
-                //    pnl_Select.Location = new Point(0, btn_THONGKE.Location.Y+183);
-                //    break;
+                case "btn_THONGKE":
+                    pnl_NoiDung.Controls.Add(new ThongKe.UC_ThongKe_Tab());
+                    pnl_Select.Location = new Point(0, btn_THONGKE.Location.Y + 183);
+                    break;
                 case "btn_SANPHAM":
                     pnl_NoiDung.Controls.Add(new SanPham.UC_SanPham_Tab());
                     pnl_Select.Location = new Point(0, btn_SANPHAM.Location.Y + 183);

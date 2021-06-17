@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CuaHang_XeMay_Main" Class="DataClassesQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=MAYTINH-9R2EF4H\SQLEXPRESS;Initial Catalog=CuaHang_XeMay_Main;Integrated Security=True" SettingsObjectName="QL_CuaHangXeMay.Properties.Settings" SettingsPropertyName="CuaHang_XeMay_MainConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CuaHang_XeMay_OFMain" Class="DataClassesQLDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MAYTINH-9R2EF4H\SQLEXPRESS;Initial Catalog=CuaHang_XeMay_OFMain;Integrated Security=True" SettingsObjectName="QL_CuaHangXeMay.Properties.Settings" SettingsPropertyName="CuaHang_XeMay_OFMainConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ChucNang" Member="ChucNangs">
     <Type Name="ChucNang">
       <Column Name="ma_CN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -192,14 +192,10 @@
       <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.searh_giasp" Method="searh_giasp">
-    <Parameter Name="search" Type="System.String" DbType="NVarChar(MAX)" />
-    <ElementType Name="searh_giaspResult">
-      <Column Name="ma_GiaSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ten_sp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="gia_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ngay_BDSP" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-    </ElementType>
+  <Function Name="dbo.updateSLT" Method="updateSLT">
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.DeleteLoaiSP" Method="DeleteLoaiSP">
     <Parameter Name="maloai" Type="System.Int32" DbType="Int" />
@@ -276,23 +272,56 @@
       <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.search_SP" Method="search_SP">
-    <Parameter Name="search" Type="System.String" DbType="NVarChar(MAX)" />
-    <ElementType Name="search_SPResult">
-      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="ten_Loai" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="ten_Hang" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+  <Function Name="dbo.hd_phieunhappppp" Method="hd_phieunhappppp">
+    <ElementType Name="hd_phieunhapppppResult">
+      <Column Name="ma_PN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ten_NCC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ngaylap_PN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.hd" Method="hd">
-    <ElementType Name="hdResult">
-      <Column Name="ma_HD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+  <Function Name="dbo.inPN" Method="inPN">
+    <Parameter Name="mapn" Type="System.Int32" DbType="Int" />
+    <ElementType Name="inPNResult">
+      <Column Name="ma_PN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ma_NCC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ma_NV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaylap_PN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="isDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ma_NV1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="ten_HK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="mail_NV" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="sdt_NV" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="mk_dangnhap" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ma_NCC1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ten_NCC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ma_PN1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="gianhap_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ma_SP1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ma_DM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ma_Loai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ma_Hang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="soluong_SP1" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.INSERT_CTHD" Method="INSERT_CTHD">
+    <Parameter Name="mahd" Type="System.Int32" DbType="Int" />
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="giasp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tongtien" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Insert_HoaDon" Method="Insert_HoaDon">
+    <Parameter Name="makh" Type="System.Int32" DbType="Int" />
+    <Parameter Name="manv" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ngaylap" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="isdelete" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.search_hdBan" Method="search_hdBan">
     <Parameter Name="search" Type="System.String" DbType="NVarChar(MAX)" />
@@ -301,14 +330,6 @@
       <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="ten_HK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="dbo.hd_phieunhappppp" Method="hd_phieunhappppp">
-    <ElementType Name="hd_phieunhapppppResult">
-      <Column Name="ma_PN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="ten_NCC" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="ngaylap_PN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.search_hdpn" Method="search_hdpn">
@@ -320,40 +341,23 @@
       <Column Name="ngaylap_PN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.Insert_HoaDon" Method="Insert_HoaDon">
-    <Parameter Name="makh" Type="System.Int32" DbType="Int" />
-    <Parameter Name="manv" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ngaylap" Type="System.DateTime" DbType="Date" />
-    <Parameter Name="isdelete" Type="System.Boolean" DbType="Bit" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.selectHoaDon" Method="selectHoaDon">
-    <Parameter Name="mahd" Type="System.Int32" DbType="Int" />
-    <ElementType Name="selectHoaDonResult">
-      <Column Name="ma_HD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ma_KH" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ma_NV" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="isDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+  <Function Name="dbo.search_SP" Method="search_SP">
+    <Parameter Name="search" Type="System.String" DbType="NVarChar(MAX)" />
+    <ElementType Name="search_SPResult">
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ten_Loai" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ten_Hang" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.INSERT_CTHD" Method="INSERT_CTHD">
-    <Parameter Name="mahd" Type="System.Int32" DbType="Int" />
-    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
-    <Parameter Name="giasp" Type="System.Int32" DbType="Int" />
-    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
-    <Parameter Name="tongtien" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.selectSP" Method="selectSP">
-    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
-    <ElementType Name="selectSPResult">
-      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ma_DM" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ma_Loai" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ma_Hang" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+  <Function Name="dbo.searh_giasp" Method="searh_giasp">
+    <Parameter Name="search" Type="System.String" DbType="NVarChar(MAX)" />
+    <ElementType Name="searh_giaspResult">
+      <Column Name="ma_GiaSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ten_sp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="gia_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngay_BDSP" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.selectAll_CTHD" Method="selectAll_CTHD">
@@ -367,19 +371,6 @@
       <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.updateSL_CTHD" Method="updateSL_CTHD">
-    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
-    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
-    <Parameter Name="gia" Type="System.Int32" DbType="Int" />
-    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
-    <Parameter Name="THANHTIEN" Parameter="tHANHTIEN" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="dbo.updateSLT" Method="updateSLT">
-    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
-    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.selectCTHD" Method="selectCTHD">
     <Parameter Name="mahd" Type="System.Int32" DbType="Int" />
     <ElementType Name="selectCTHDResult">
@@ -388,6 +379,129 @@
       <Column Name="gia_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.selectHoaDon" Method="selectHoaDon">
+    <Parameter Name="mahd" Type="System.Int32" DbType="Int" />
+    <ElementType Name="selectHoaDonResult">
+      <Column Name="ma_HD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ma_KH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ma_NV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="isDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.selectSP" Method="selectSP">
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <ElementType Name="selectSPResult">
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ma_DM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ma_Loai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ma_Hang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.updateSL_CTHD" Method="updateSL_CTHD">
+    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="gia" Type="System.Int32" DbType="Int" />
+    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="THANHTIEN" Parameter="tHANHTIEN" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.hd" Method="hd">
+    <ElementType Name="hdResult">
+      <Column Name="ma_HD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ten_HK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.inHd" Method="inHd">
+    <Parameter Name="mahd" Type="System.Int32" DbType="Int" />
+    <ElementType Name="inHdResult">
+      <Column Name="ma_HD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ten_HK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sdt_KH" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="mail_KH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="gia_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.selectPN" Method="selectPN">
+    <Parameter Name="mapn" Type="System.Int32" DbType="Int" />
+    <ElementType Name="selectPNResult">
+      <Column Name="ma_PN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ma_NCC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ma_NV" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ngaylap_PN" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="isDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.INSERT_PNHAP" Method="INSERT_PNHAP">
+    <Parameter Name="MANHACUNGCAP" Parameter="mANHACUNGCAP" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MANHANVIEN" Parameter="mANHANVIEN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="NGAYNHAP" Parameter="nGAYNHAP" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="isdelete" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.INSERT_CTPNHAPXE" Method="INSERT_CTPNHAPXE">
+    <Parameter Name="MAPN" Parameter="mAPN" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MASP" Parameter="mASP" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DONGIANHAPXE" Parameter="dONGIANHAPXE" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SLNHAPXE" Parameter="sLNHAPXE" Type="System.Int32" DbType="Int" />
+    <Parameter Name="THANHTIEN" Parameter="tHANHTIEN" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.selectCTPNxe" Method="selectCTPNxe">
+    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
+    <ElementType Name="selectCTPNxeResult">
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gianhap_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.selectCTPN" Method="selectCTPN">
+    <Parameter Name="mapn" Type="System.Int32" DbType="Int" />
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <ElementType Name="selectCTPNResult">
+      <Column Name="ma_PN" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="gianhap_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.updateSLTCTPNX" Method="updateSLTCTPNX">
+    <Parameter Name="ma" Type="System.Int32" DbType="Int" />
+    <Parameter Name="masp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="gia" Type="System.Int32" DbType="Int" />
+    <Parameter Name="soluong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="THANHTIEN" Parameter="tHANHTIEN" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ThongKe_Thang_Nam" Method="ThongKe_Thang_Nam">
+    <Parameter Name="MONTH" Parameter="mONTH" Type="System.Int32" DbType="Int" />
+    <Parameter Name="YEAR" Parameter="yEAR" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ThongKe_Thang_NamResult">
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ThongKe_SPMuaNhieu" Method="ThongKe_SPMuaNhieu">
+    <Parameter Name="MONTH" Parameter="mONTH" Type="System.Int32" DbType="Int" />
+    <Parameter Name="YEAR" Parameter="yEAR" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ThongKe_SPMuaNhieuResult">
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

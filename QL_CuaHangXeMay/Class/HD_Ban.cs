@@ -55,6 +55,24 @@ namespace QL_CuaHangXeMay.Class
                 return false;
             }
         }
+
+        public static bool update_HD_Ban(int hd, int kh)
+        {
+            try
+            {
+                using (DataClassesQLDataContext dt = new DataClassesQLDataContext())
+                {
+                    HD_BanHang hd_tt = dt.HD_BanHangs.Where(p => p.ma_HD == hd).Where(s => s.ma_KH == kh).FirstOrDefault();
+                    hd_tt.isDelete = true;
+                    dt.SubmitChanges();
+                    return true;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
         public static List<string> Get_YearList()
         {
             using (DataClassesQLDataContext dt = new DataClassesQLDataContext())

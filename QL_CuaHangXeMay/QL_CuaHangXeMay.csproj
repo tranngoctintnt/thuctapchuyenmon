@@ -68,6 +68,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -89,6 +90,7 @@
     <Compile Include="Class\NguoiDung_Data.cs" />
     <Compile Include="Class\NhaCungCap_Data.cs" />
     <Compile Include="Class\SanPham_Data.cs" />
+    <Compile Include="Class\ThongKe_Data.cs" />
     <Compile Include="DataClassesQL.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -128,11 +130,29 @@
     <Compile Include="HoaDon\HD_PhieuNhap.designer.cs">
       <DependentUpon>HD_PhieuNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoaDon\inHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon\inHoaDon.Designer.cs">
+      <DependentUpon>inHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\inPN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon\inPN.Designer.cs">
+      <DependentUpon>inPN.cs</DependentUpon>
+    </Compile>
     <Compile Include="HoaDon\Lap_HD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="HoaDon\Lap_HD.designer.cs">
       <DependentUpon>Lap_HD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon\PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon\PhieuNhap.designer.cs">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="HoaDon\UC_HoaDon.cs">
       <SubType>UserControl</SubType>
@@ -264,6 +284,24 @@
       <DependentUpon>UC_SaoLuu.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ThongKe\UC_ThongKeDaonhSo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongKe\UC_ThongKeDaonhSo.designer.cs">
+      <DependentUpon>UC_ThongKeDaonhSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\UC_ThongKeMuaNhieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongKe\UC_ThongKeMuaNhieu.designer.cs">
+      <DependentUpon>UC_ThongKeMuaNhieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\UC_ThongKe_Tab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongKe\UC_ThongKe_Tab.designer.cs">
+      <DependentUpon>UC_ThongKe_Tab.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -282,8 +320,17 @@
     <EmbeddedResource Include="HoaDon\HD_PhieuNhap.resx">
       <DependentUpon>HD_PhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\inHoaDon.resx">
+      <DependentUpon>inHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\inPN.resx">
+      <DependentUpon>inPN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HoaDon\Lap_HD.resx">
       <DependentUpon>Lap_HD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon\PhieuNhap.resx">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HoaDon\ReportHD.rdlc" />
     <EmbeddedResource Include="HoaDon\Report_PhieuNhap.rdlc" />
@@ -359,6 +406,15 @@
     <EmbeddedResource Include="SaoLuu\UC_SaoLuu.resx">
       <DependentUpon>UC_SaoLuu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\UC_ThongKeDaonhSo.resx">
+      <DependentUpon>UC_ThongKeDaonhSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\UC_ThongKeMuaNhieu.resx">
+      <DependentUpon>UC_ThongKeMuaNhieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\UC_ThongKe_Tab.resx">
+      <DependentUpon>UC_ThongKe_Tab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_Dashboard.resx">
       <DependentUpon>UC_Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -409,9 +465,7 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ThongKe\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

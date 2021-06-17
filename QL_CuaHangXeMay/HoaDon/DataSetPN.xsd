@@ -2,14 +2,15 @@
 <xs:schema id="DataSetPN" targetNamespace="http://tempuri.org/DataSetPN.xsd" xmlns:mstns="http://tempuri.org/DataSetPN.xsd" xmlns="http://tempuri.org/DataSetPN.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CuaHang_XeMay_MainConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CuaHang_XeMay_MainConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QL_CuaHangXeMay.Properties.Settings.GlobalReference.Default.CuaHang_XeMay_MainConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CuaHang_XeMay_OFMainConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CuaHang_XeMay_OFMainConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QL_CuaHangXeMay.Properties.Settings.GlobalReference.Default.CuaHang_XeMay_OFMainConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="inPNTableAdapter" GeneratorDataComponentClassName="inPNTableAdapter" Name="inPN" UserDataComponentName="inPNTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="CuaHang_XeMay_MainConnectionString (Settings)" DbObjectName="CuaHang_XeMay_Main.dbo.inPN" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="CuaHang_XeMay_OFMainConnectionString (Settings)" DbObjectName="CuaHang_XeMay_OFMain.dbo.inPN" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.inPN</CommandText>
@@ -23,28 +24,14 @@
             </MainSource>
             <Mappings>
               <Mapping SourceColumn="ma_PN" DataSetColumn="ma_PN" />
-              <Mapping SourceColumn="ma_NCC" DataSetColumn="ma_NCC" />
-              <Mapping SourceColumn="ma_NV" DataSetColumn="ma_NV" />
-              <Mapping SourceColumn="ngaylap_PN" DataSetColumn="ngaylap_PN" />
-              <Mapping SourceColumn="isDelete" DataSetColumn="isDelete" />
-              <Mapping SourceColumn="ma_NV1" DataSetColumn="ma_NV1" />
               <Mapping SourceColumn="ten_NV" DataSetColumn="ten_NV" />
-              <Mapping SourceColumn="mail_NV" DataSetColumn="mail_NV" />
-              <Mapping SourceColumn="sdt_NV" DataSetColumn="sdt_NV" />
-              <Mapping SourceColumn="mk_dangnhap" DataSetColumn="mk_dangnhap" />
-              <Mapping SourceColumn="ma_NCC1" DataSetColumn="ma_NCC1" />
-              <Mapping SourceColumn="ten_NCC" DataSetColumn="ten_NCC" />
-              <Mapping SourceColumn="ma_PN1" DataSetColumn="ma_PN1" />
+              <Mapping SourceColumn="ngaylap_PN" DataSetColumn="ngaylap_PN" />
               <Mapping SourceColumn="ma_SP" DataSetColumn="ma_SP" />
+              <Mapping SourceColumn="Ten_SP" DataSetColumn="Ten_SP" />
+              <Mapping SourceColumn="ten_NCC" DataSetColumn="ten_NCC" />
               <Mapping SourceColumn="gianhap_SP" DataSetColumn="gianhap_SP" />
               <Mapping SourceColumn="soluong_SP" DataSetColumn="soluong_SP" />
               <Mapping SourceColumn="tongtien_SP" DataSetColumn="tongtien_SP" />
-              <Mapping SourceColumn="ma_SP1" DataSetColumn="ma_SP1" />
-              <Mapping SourceColumn="ma_DM" DataSetColumn="ma_DM" />
-              <Mapping SourceColumn="ma_Loai" DataSetColumn="ma_Loai" />
-              <Mapping SourceColumn="ma_Hang" DataSetColumn="ma_Hang" />
-              <Mapping SourceColumn="Ten_SP" DataSetColumn="Ten_SP" />
-              <Mapping SourceColumn="soluong_SP1" DataSetColumn="soluong_SP1" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -60,11 +47,6 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ma_PN" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnma_PN" msprop:Generator_ColumnPropNameInRow="ma_PN" msprop:Generator_ColumnPropNameInTable="ma_PNColumn" msprop:Generator_UserColumnName="ma_PN" type="xs:int" />
-              <xs:element name="ma_NCC" msprop:Generator_ColumnVarNameInTable="columnma_NCC" msprop:Generator_ColumnPropNameInRow="ma_NCC" msprop:Generator_ColumnPropNameInTable="ma_NCCColumn" msprop:Generator_UserColumnName="ma_NCC" type="xs:int" minOccurs="0" />
-              <xs:element name="ma_NV" msprop:Generator_ColumnVarNameInTable="columnma_NV" msprop:Generator_ColumnPropNameInRow="ma_NV" msprop:Generator_ColumnPropNameInTable="ma_NVColumn" msprop:Generator_UserColumnName="ma_NV" type="xs:int" minOccurs="0" />
-              <xs:element name="ngaylap_PN" msprop:Generator_ColumnVarNameInTable="columnngaylap_PN" msprop:Generator_ColumnPropNameInRow="ngaylap_PN" msprop:Generator_ColumnPropNameInTable="ngaylap_PNColumn" msprop:Generator_UserColumnName="ngaylap_PN" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="isDelete" msprop:Generator_ColumnVarNameInTable="columnisDelete" msprop:Generator_ColumnPropNameInRow="isDelete" msprop:Generator_ColumnPropNameInTable="isDeleteColumn" msprop:Generator_UserColumnName="isDelete" type="xs:boolean" minOccurs="0" />
-              <xs:element name="ma_NV1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnma_NV1" msprop:Generator_ColumnPropNameInRow="ma_NV1" msprop:Generator_ColumnPropNameInTable="ma_NV1Column" msprop:Generator_UserColumnName="ma_NV1" type="xs:int" />
               <xs:element name="ten_NV" msprop:Generator_ColumnVarNameInTable="columnten_NV" msprop:Generator_ColumnPropNameInRow="ten_NV" msprop:Generator_ColumnPropNameInTable="ten_NVColumn" msprop:Generator_UserColumnName="ten_NV" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -72,44 +54,8 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="mail_NV" msprop:Generator_ColumnVarNameInTable="columnmail_NV" msprop:Generator_ColumnPropNameInRow="mail_NV" msprop:Generator_ColumnPropNameInTable="mail_NVColumn" msprop:Generator_UserColumnName="mail_NV" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="sdt_NV" msprop:Generator_ColumnVarNameInTable="columnsdt_NV" msprop:Generator_ColumnPropNameInRow="sdt_NV" msprop:Generator_ColumnPropNameInTable="sdt_NVColumn" msprop:Generator_UserColumnName="sdt_NV" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="10" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="mk_dangnhap" msprop:Generator_ColumnVarNameInTable="columnmk_dangnhap" msprop:Generator_ColumnPropNameInRow="mk_dangnhap" msprop:Generator_ColumnPropNameInTable="mk_dangnhapColumn" msprop:Generator_UserColumnName="mk_dangnhap" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ma_NCC1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnma_NCC1" msprop:Generator_ColumnPropNameInRow="ma_NCC1" msprop:Generator_ColumnPropNameInTable="ma_NCC1Column" msprop:Generator_UserColumnName="ma_NCC1" type="xs:int" />
-              <xs:element name="ten_NCC" msprop:Generator_ColumnVarNameInTable="columnten_NCC" msprop:Generator_ColumnPropNameInRow="ten_NCC" msprop:Generator_ColumnPropNameInTable="ten_NCCColumn" msprop:Generator_UserColumnName="ten_NCC" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="2147483647" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
-              <xs:element name="ma_PN1" msprop:Generator_ColumnVarNameInTable="columnma_PN1" msprop:Generator_ColumnPropNameInRow="ma_PN1" msprop:Generator_ColumnPropNameInTable="ma_PN1Column" msprop:Generator_UserColumnName="ma_PN1" type="xs:int" />
-              <xs:element name="ma_SP" msprop:Generator_ColumnVarNameInTable="columnma_SP" msprop:Generator_ColumnPropNameInRow="ma_SP" msprop:Generator_ColumnPropNameInTable="ma_SPColumn" msprop:Generator_UserColumnName="ma_SP" type="xs:int" />
-              <xs:element name="gianhap_SP" msprop:Generator_ColumnVarNameInTable="columngianhap_SP" msprop:Generator_ColumnPropNameInRow="gianhap_SP" msprop:Generator_ColumnPropNameInTable="gianhap_SPColumn" msprop:Generator_UserColumnName="gianhap_SP" type="xs:int" minOccurs="0" />
-              <xs:element name="soluong_SP" msprop:Generator_ColumnVarNameInTable="columnsoluong_SP" msprop:Generator_ColumnPropNameInRow="soluong_SP" msprop:Generator_ColumnPropNameInTable="soluong_SPColumn" msprop:Generator_UserColumnName="soluong_SP" type="xs:int" minOccurs="0" />
-              <xs:element name="tongtien_SP" msprop:Generator_ColumnVarNameInTable="columntongtien_SP" msprop:Generator_ColumnPropNameInRow="tongtien_SP" msprop:Generator_ColumnPropNameInTable="tongtien_SPColumn" msprop:Generator_UserColumnName="tongtien_SP" type="xs:int" minOccurs="0" />
-              <xs:element name="ma_SP1" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnma_SP1" msprop:Generator_ColumnPropNameInRow="ma_SP1" msprop:Generator_ColumnPropNameInTable="ma_SP1Column" msprop:Generator_UserColumnName="ma_SP1" type="xs:int" />
-              <xs:element name="ma_DM" msprop:Generator_ColumnVarNameInTable="columnma_DM" msprop:Generator_ColumnPropNameInRow="ma_DM" msprop:Generator_ColumnPropNameInTable="ma_DMColumn" msprop:Generator_UserColumnName="ma_DM" type="xs:int" minOccurs="0" />
-              <xs:element name="ma_Loai" msprop:Generator_ColumnVarNameInTable="columnma_Loai" msprop:Generator_ColumnPropNameInRow="ma_Loai" msprop:Generator_ColumnPropNameInTable="ma_LoaiColumn" msprop:Generator_UserColumnName="ma_Loai" type="xs:int" minOccurs="0" />
-              <xs:element name="ma_Hang" msprop:Generator_ColumnVarNameInTable="columnma_Hang" msprop:Generator_ColumnPropNameInRow="ma_Hang" msprop:Generator_ColumnPropNameInTable="ma_HangColumn" msprop:Generator_UserColumnName="ma_Hang" type="xs:int" minOccurs="0" />
+              <xs:element name="ngaylap_PN" msprop:Generator_ColumnVarNameInTable="columnngaylap_PN" msprop:Generator_ColumnPropNameInRow="ngaylap_PN" msprop:Generator_ColumnPropNameInTable="ngaylap_PNColumn" msprop:Generator_UserColumnName="ngaylap_PN" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ma_SP" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnma_SP" msprop:Generator_ColumnPropNameInRow="ma_SP" msprop:Generator_ColumnPropNameInTable="ma_SPColumn" msprop:Generator_UserColumnName="ma_SP" type="xs:int" />
               <xs:element name="Ten_SP" msprop:Generator_ColumnVarNameInTable="columnTen_SP" msprop:Generator_ColumnPropNameInRow="Ten_SP" msprop:Generator_ColumnPropNameInTable="Ten_SPColumn" msprop:Generator_UserColumnName="Ten_SP" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
@@ -117,20 +63,20 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="soluong_SP1" msprop:Generator_ColumnVarNameInTable="columnsoluong_SP1" msprop:Generator_ColumnPropNameInRow="soluong_SP1" msprop:Generator_ColumnPropNameInTable="soluong_SP1Column" msprop:Generator_UserColumnName="soluong_SP1" type="xs:int" minOccurs="0" />
+              <xs:element name="ten_NCC" msprop:Generator_ColumnVarNameInTable="columnten_NCC" msprop:Generator_ColumnPropNameInRow="ten_NCC" msprop:Generator_ColumnPropNameInTable="ten_NCCColumn" msprop:Generator_UserColumnName="ten_NCC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gianhap_SP" msprop:Generator_ColumnVarNameInTable="columngianhap_SP" msprop:Generator_ColumnPropNameInRow="gianhap_SP" msprop:Generator_ColumnPropNameInTable="gianhap_SPColumn" msprop:Generator_UserColumnName="gianhap_SP" type="xs:int" minOccurs="0" />
+              <xs:element name="soluong_SP" msprop:Generator_ColumnVarNameInTable="columnsoluong_SP" msprop:Generator_ColumnPropNameInRow="soluong_SP" msprop:Generator_ColumnPropNameInTable="soluong_SPColumn" msprop:Generator_UserColumnName="soluong_SP" type="xs:int" minOccurs="0" />
+              <xs:element name="tongtien_SP" msprop:Generator_ColumnVarNameInTable="columntongtien_SP" msprop:Generator_ColumnPropNameInRow="tongtien_SP" msprop:Generator_ColumnPropNameInTable="tongtien_SPColumn" msprop:Generator_UserColumnName="tongtien_SP" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
       </xs:choice>
     </xs:complexType>
-    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:inPN" />
-      <xs:field xpath="mstns:ma_PN" />
-      <xs:field xpath="mstns:ma_NV1" />
-      <xs:field xpath="mstns:ma_NCC1" />
-      <xs:field xpath="mstns:ma_PN1" />
-      <xs:field xpath="mstns:ma_SP" />
-      <xs:field xpath="mstns:ma_SP1" />
-    </xs:unique>
   </xs:element>
 </xs:schema>

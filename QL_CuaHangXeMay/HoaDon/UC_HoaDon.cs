@@ -43,14 +43,14 @@ namespace QuanLy_CuaHang.HoaDon
                     this.tabPage3.Controls.Clear();
                     this.tabPage3.Controls.Add(new HD_PhieuNhap());
                     break;
-                    //case 3:
-                    //    PhieuNhap pn = new PhieuNhap();
-                    //    pn.TopLevel = false;
-                    //    tabPage2.Controls.Add(pn);
-                    //    pn.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-                    //    pn.Dock = DockStyle.Fill;
-                    //    pn.Show();
-                    //    break;
+                case 3:
+                    PhieuNhap pn = new PhieuNhap();
+                    pn.TopLevel = false;
+                    tabPage2.Controls.Add(pn);
+                    pn.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+                    pn.Dock = DockStyle.Fill;
+                    pn.Show();
+                    break;
 
             }
         }

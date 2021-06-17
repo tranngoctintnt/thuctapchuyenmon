@@ -112,7 +112,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox13</rd:DefaultName>
-        <Top>0.25903in</Top>
+        <Top>0.27292in</Top>
         <Left>1.7943in</Left>
         <Height>0.25in</Height>
         <Width>0.92014in</Width>
@@ -472,21 +472,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="ma_SP1">
+                    <Textbox Name="ma_SP">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ma_SP1.Value</Value>
+                              <Value>=Fields!ma_SP.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>ma_SP1</rd:DefaultName>
+                      <rd:DefaultName>ma_SP</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -678,7 +678,7 @@
         <Top>1.61528in</Top>
         <Left>0.19098in</Left>
         <Height>0.5in</Height>
-        <Width>6.58333in</Width>
+        <Width>6.58332in</Width>
         <ZIndex>9</ZIndex>
         <Style>
           <Border>
@@ -1007,57 +1007,25 @@
           <DataField>ma_PN</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="ma_NCC">
-          <DataField>ma_NCC</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_NV">
-          <DataField>ma_NV</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="ten_NV">
+          <DataField>ten_NV</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ngaylap_PN">
           <DataField>ngaylap_PN</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
-        <Field Name="isDelete">
-          <DataField>isDelete</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="ma_NV1">
-          <DataField>ma_NV1</DataField>
+        <Field Name="ma_SP">
+          <DataField>ma_SP</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="ten_NV">
-          <DataField>ten_NV</DataField>
+        <Field Name="Ten_SP">
+          <DataField>Ten_SP</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="mail_NV">
-          <DataField>mail_NV</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="sdt_NV">
-          <DataField>sdt_NV</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="mk_dangnhap">
-          <DataField>mk_dangnhap</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ma_NCC1">
-          <DataField>ma_NCC1</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="ten_NCC">
           <DataField>ten_NCC</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ma_PN1">
-          <DataField>ma_PN1</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_SP">
-          <DataField>ma_SP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="gianhap_SP">
           <DataField>gianhap_SP</DataField>
@@ -1069,30 +1037,6 @@
         </Field>
         <Field Name="tongtien_SP">
           <DataField>tongtien_SP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_SP1">
-          <DataField>ma_SP1</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_DM">
-          <DataField>ma_DM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_Loai">
-          <DataField>ma_Loai</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_Hang">
-          <DataField>ma_Hang</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Ten_SP">
-          <DataField>Ten_SP</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="soluong_SP1">
-          <DataField>soluong_SP1</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>

@@ -44,5 +44,16 @@ namespace QL_CuaHangXeMay.Properties {
                 return ((string)(this["CuaHang_XeMay_MainConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MAYTINH-9R2EF4H\\SQLEXPRESS;Initial Catalog=CuaHang_XeMay_OFMain;Integ" +
+            "rated Security=True")]
+        public string CuaHang_XeMay_OFMainConnectionString {
+            get {
+                return ((string)(this["CuaHang_XeMay_OFMainConnectionString"]));
+            }
+        }
     }
 }

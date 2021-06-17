@@ -209,7 +209,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox5</rd:DefaultName>
         <Top>0.125in</Top>
-        <Left>1.96306in</Left>
+        <Left>1.9618in</Left>
         <Height>0.25in</Height>
         <Width>0.66402in</Width>
         <ZIndex>6</ZIndex>
@@ -445,23 +445,23 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Tablix Name="Tablix4">
+      <Tablix Name="Tablix2">
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1.23667in</Width>
+              <Width>1.4in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.23667in</Width>
+              <Width>1.4in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.23667in</Width>
+              <Width>1.4in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.23667in</Width>
+              <Width>1.4in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.23667in</Width>
+              <Width>1.4in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -470,7 +470,7 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox79">
+                    <Textbox Name="Textbox21">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -484,7 +484,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox79</rd:DefaultName>
+                      <rd:DefaultName>Textbox21</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -500,7 +500,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox81">
+                    <Textbox Name="Textbox29">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -514,7 +514,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox81</rd:DefaultName>
+                      <rd:DefaultName>Textbox29</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -530,7 +530,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox87">
+                    <Textbox Name="Textbox34">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -544,7 +544,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox87</rd:DefaultName>
+                      <rd:DefaultName>Textbox34</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -560,7 +560,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox85">
+                    <Textbox Name="Textbox38">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -574,7 +574,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox85</rd:DefaultName>
+                      <rd:DefaultName>Textbox38</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -590,7 +590,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox83">
+                    <Textbox Name="Textbox36">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -604,7 +604,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox83</rd:DefaultName>
+                      <rd:DefaultName>Textbox36</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -625,21 +625,21 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="ma_SP1">
+                    <Textbox Name="ma_SP">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ma_SP1.Value</Value>
+                              <Value>=Fields!ma_SP.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>ma_SP1</rd:DefaultName>
+                      <rd:DefaultName>ma_SP</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -797,10 +797,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetHD</DataSetName>
-        <Top>2.74028in</Top>
-        <Left>0.18125in</Left>
+        <Top>2.48194in</Top>
+        <Left>0.18833in</Left>
         <Height>0.5in</Height>
-        <Width>6.18333in</Width>
+        <Width>7in</Width>
         <ZIndex>15</ZIndex>
         <Style>
           <Border>
@@ -812,10 +812,10 @@
     <Height>3.73264in</Height>
     <Style />
   </Body>
-  <Width>6.49667in</Width>
+  <Width>7.3646in</Width>
   <Page>
     <PageHeader>
-      <Height>1.85639in</Height>
+      <Height>1.96472in</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
@@ -1099,65 +1099,33 @@
           <DataField>ma_HD</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="ma_KH">
-          <DataField>ma_KH</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_NV">
-          <DataField>ma_NV</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ngaylap_HD">
-          <DataField>ngaylap_HD</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="isDelete">
-          <DataField>isDelete</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="ma_NV1">
-          <DataField>ma_NV1</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ten_NV">
-          <DataField>ten_NV</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="mail_NV">
-          <DataField>mail_NV</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="sdt_NV">
-          <DataField>sdt_NV</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="mk_dangnhap">
-          <DataField>mk_dangnhap</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ma_KH1">
-          <DataField>ma_KH1</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="ten_HK">
           <DataField>ten_HK</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="mail_KH">
-          <DataField>mail_KH</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="sdt_KH">
           <DataField>sdt_KH</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ma_HD1">
-          <DataField>ma_HD1</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="mail_KH">
+          <DataField>mail_KH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ten_NV">
+          <DataField>ten_NV</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ngaylap_HD">
+          <DataField>ngaylap_HD</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="ma_SP">
           <DataField>ma_SP</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Ten_SP">
+          <DataField>Ten_SP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="gia_SP">
           <DataField>gia_SP</DataField>
@@ -1169,30 +1137,6 @@
         </Field>
         <Field Name="tongtien_SP">
           <DataField>tongtien_SP</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_SP1">
-          <DataField>ma_SP1</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_DM">
-          <DataField>ma_DM</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_Loai">
-          <DataField>ma_Loai</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="ma_Hang">
-          <DataField>ma_Hang</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Ten_SP">
-          <DataField>Ten_SP</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="soluong_SP1">
-          <DataField>soluong_SP1</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>

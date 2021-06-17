@@ -114,7 +114,7 @@ namespace QuanLy_CuaHang.QL_NguoiDung
                     ten_NV = txt_tenNV.Text.ToString(),
                     mail_NV = txt_Mail.Text.ToString(),
                     sdt_NV = txt_Sdt.Text.ToString(),
-                    mk_dangnhap = ""
+                    mk_dangnhap = "E10ADC3949BA59ABBE56E057F20F883E"
                 });
 
                 if (ckb_QLSP.Checked)

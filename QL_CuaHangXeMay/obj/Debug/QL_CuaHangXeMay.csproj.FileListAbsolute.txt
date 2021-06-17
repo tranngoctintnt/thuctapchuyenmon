@@ -99,3 +99,9 @@ C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\RdlCompile
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.HoaDon.HD_PhieuNhap.resources
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.HoaDon.ViewPN.resources
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.HoaDon.Lap_HD.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.HoaDon.inHoaDon.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.HoaDon.PhieuNhap.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.HoaDon.inPN.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.ThongKe.UC_ThongKeDaonhSo.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.ThongKe.UC_ThongKeMuaNhieu.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.ThongKe.UC_ThongKe_Tab.resources

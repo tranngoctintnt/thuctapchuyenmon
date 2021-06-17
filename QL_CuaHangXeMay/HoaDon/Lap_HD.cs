@@ -1,5 +1,6 @@
 ﻿using QL_CuaHangXeMay;
 using QL_CuaHangXeMay.Class;
+using QL_CuaHangXeMay.HoaDon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -96,6 +97,11 @@ namespace QuanLy_CuaHang.HoaDon
                         Convert.ToDateTime(DateTime.Now), false);
                     dt.INSERT_CTHD(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), Convert.ToInt32(txtDongia.Text), Convert.ToInt32(txtSL.Text),
                                         (Convert.ToInt32(txtSL.Text) * Convert.ToInt32(txtDongia.Text)));
+
+                    var sp = dt.selectSP(Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+                    var cthd = dt.CTHD_BanHangs.Where(s => s.ma_HD == Convert.ToInt32(lbMaHD.Text)).Where(s => s.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+                    dt.updateSLT(Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), sp.soluong_SP - cthd.soluong_SP);
+                    label2.Text = sp.soluong_SP.ToString();
                     double thanhtien = 0;
                     foreach (var a in dt.selectCTHD(Convert.ToInt32(lbMaHD.Text)))
                     {
@@ -105,10 +111,7 @@ namespace QuanLy_CuaHang.HoaDon
                    
                     //dt.UPDATE_ThanhTien(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(thanhtien));
                     MessageBox.Show("Thêm thành công", "Thêm");
-                    var sp = dt.selectSP(Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
-                    var cthd = dt.CTHD_BanHangs.Where(s => s.ma_HD == Convert.ToInt32(lbMaHD.Text)).Where(s => s.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
-                    dt.updateSLT(Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), sp.soluong_SP - cthd.soluong_SP);
-                    label2.Text = sp.soluong_SP.ToString();
+                    
 
                 }
                 else if (HDX != null)
@@ -118,6 +121,11 @@ namespace QuanLy_CuaHang.HoaDon
                     {
                         dt.INSERT_CTHD(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), Convert.ToInt32(txtDongia.Text), Convert.ToInt32(txtSL.Text),
                                         (Convert.ToInt32(txtSL.Text) * Convert.ToInt32(txtDongia.Text)));
+
+                        var sp = dt.selectSP(Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+                        var cthd = dt.CTHD_BanHangs.Where(s => s.ma_HD == Convert.ToInt32(lbMaHD.Text)).Where(s => s.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+                        dt.updateSLT(Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), sp.soluong_SP - cthd.soluong_SP);
+                        label2.Text = sp.soluong_SP.ToString();
                         double thanhtien = 0;
                         foreach (var a in dt.selectCTHD(Convert.ToInt32(lbMaHD.Text)))
                         {
@@ -127,16 +135,19 @@ namespace QuanLy_CuaHang.HoaDon
 
                         //dt.UPDATE_ThanhTien(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(thanhtien));
                         MessageBox.Show("Thêm thành công", "Thêm");
-                        var sp = dt.selectSP(Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
-                        var cthd = dt.CTHD_BanHangs.Where(s => s.ma_HD == Convert.ToInt32(lbMaHD.Text)).Where(s => s.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
-                        dt.updateSLT(Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), sp.soluong_SP - cthd.soluong_SP);
-                        label2.Text = sp.soluong_SP.ToString();
+                        
 
                     }
                     else if (CTX != null)
                     {
                         dt.updateSL_CTHD(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), Convert.ToInt32(txtDongia.Text), Convert.ToInt32(txtSL.Text) + CTX.soluong_SP,
                           Convert.ToInt32(CTX.tongtien_SP + (Convert.ToInt32(txtSL.Text) * Convert.ToInt32(txtDongia.Text))));
+
+                        var sp = dt.selectSP(Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+                        var cthd = dt.CTHD_BanHangs.Where(s => s.ma_HD == Convert.ToInt32(lbMaHD.Text)).Where(s => s.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+                        dt.updateSLT(Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), sp.soluong_SP - cthd.soluong_SP);
+                        label2.Text = sp.soluong_SP.ToString();
+
                         int thanhtien = 0;
                         foreach (var a in dt.selectCTHD(Convert.ToInt32(lbMaHD.Text)))
                         {
@@ -145,13 +156,13 @@ namespace QuanLy_CuaHang.HoaDon
                         
                         //dt.UPDATE_ThanhTien(Convert.ToInt32(lbMaHD.Text),Convert.ToInt32(thanhtien));
                         MessageBox.Show("Thêm thành công", "Thêm");
-                        var sp = dt.selectSP(Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
-                        var cthd = dt.CTHD_BanHangs.Where(s => s.ma_HD == Convert.ToInt32(lbMaHD.Text)).Where(s => s.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
-                        dt.updateSLT(Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), sp.soluong_SP - cthd.soluong_SP);
-                        label2.Text = sp.soluong_SP.ToString();
+                        
                     }
                 }
             }
+            var sp1 = dt.selectSP(Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+            label2.Text = sp1.soluong_SP.ToString();
+
             dgv_hd.DataSource = dt.selectCTHD(Convert.ToInt32(lbMaHD.Text));
             txtSL.ResetText();
             int TongTienHD = 0;
@@ -183,8 +194,8 @@ namespace QuanLy_CuaHang.HoaDon
         private void gunaButton1_Click(object sender, EventArgs e)
         {
             thongtinHD.ma = lbMaHD.Text;
-            //HoaDon hd = new HoaDon();
-            //hd.Show();
+            inHoaDon hd = new inHoaDon();
+            hd.Show();
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -210,37 +221,7 @@ namespace QuanLy_CuaHang.HoaDon
             }
             return null;
         }
-        private void dgvHD_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgv_hd.Columns[e.ColumnIndex].Name == "xoa")
-            {
-                DialogResult a = MessageBox.Show(" Ban co muon xoa khong?", "Xoa", MessageBoxButtons.YesNo);
-                if (a == DialogResult.Yes)
-                {
-                    //var HDX = dt.selectHoaDon(lbMaHD.Text).FirstOrDefault();
-                    var sp = dt.SanPhams.Where(p => p.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
-                    var cthd = dt.CTHD_BanHangs.Where(s => s.ma_HD == Convert.ToInt32(lbMaHD.Text)).Where(s => s.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
-                    //dt.delete_cthd(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(cbbTenSP.SelectedValue.ToString()));
-                    HD_Ban.Delete_CTHD(Convert.ToInt32(lbMaHD.Text), int.Parse(Get_Id()));
-                    //dt.UPDATE_ThanhTien(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(THANHTIEN));
-                    dt.updateSLT(Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), sp.soluong_SP + cthd.soluong_SP);
-                    dgv_hd.DataSource = dt.selectCTHD(Convert.ToInt32(lbMaHD.Text));
-                    txtSL.ResetText();
-                    label2.Text = sp.soluong_SP.ToString();
-                    int TongTienHD = 0;
-                    //double TongTienDiscount = 0;
-                    foreach (var c in dt.selectCTHD(Convert.ToInt32(lbMaHD.Text)))
-                    {
-                        TongTienHD = TongTienHD + Convert.ToInt32(c.gia_SP) * Convert.ToInt32(c.soluong_SP);
-
-                    }
-                    //dt.UPDATE_TONGTIEN(Convert.ToInt32(lbMaHD.Text), TongTienHD);
-                    lbTongTien.Text = TongTienHD.ToString("N0");
-
-                }
-            }
-        }
-
+        
         private void cbbKH_SelectedIndexChanged(object sender, EventArgs e)
         {
             QL_CuaHangXeMay.KhachHang kh = dt.KhachHangs.Where(s => s.ma_KH == Convert.ToInt32(cbbKH.SelectedValue.ToString())).FirstOrDefault();
@@ -272,6 +253,42 @@ namespace QuanLy_CuaHang.HoaDon
             }
             catch (Exception)
             {
+            }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_hd_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgv_hd.Columns[e.ColumnIndex].Name == "xoa")
+            {
+                DialogResult a = MessageBox.Show(" Ban co muon xoa khong?", "Xoa", MessageBoxButtons.YesNo);
+                if (a == DialogResult.Yes)
+                {
+                    //var HDX = dt.selectHoaDon(lbMaHD.Text).FirstOrDefault();
+                    var sp = dt.SanPhams.Where(p => p.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+                    var cthd = dt.CTHD_BanHangs.Where(s => s.ma_HD == Convert.ToInt32(lbMaHD.Text)).Where(s => s.ma_SP == Convert.ToInt32(cbbTenHang.SelectedValue.ToString())).FirstOrDefault();
+                    //dt.delete_cthd(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(cbbTenSP.SelectedValue.ToString()));
+                    HD_Ban.Delete_CTHD(Convert.ToInt32(lbMaHD.Text), int.Parse(Get_Id()));
+                    //dt.UPDATE_ThanhTien(Convert.ToInt32(lbMaHD.Text), Convert.ToInt32(THANHTIEN));
+                    dt.updateSLT(Convert.ToInt32(cbbTenHang.SelectedValue.ToString()), sp.soluong_SP + cthd.soluong_SP);
+                    dgv_hd.DataSource = dt.selectCTHD(Convert.ToInt32(lbMaHD.Text));
+                    txtSL.ResetText();
+                    label2.Text = sp.soluong_SP.ToString();
+                    int TongTienHD = 0;
+                    //double TongTienDiscount = 0;
+                    foreach (var c in dt.selectCTHD(Convert.ToInt32(lbMaHD.Text)))
+                    {
+                        TongTienHD = TongTienHD + Convert.ToInt32(c.gia_SP) * Convert.ToInt32(c.soluong_SP);
+
+                    }
+                    //dt.UPDATE_TONGTIEN(Convert.ToInt32(lbMaHD.Text), TongTienHD);
+                    lbTongTien.Text = TongTienHD.ToString("N0");
+
+                }
             }
         }
     }
