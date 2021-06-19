@@ -20,4 +20,22 @@
 - Quản lý bán hàng, cập nhật số lượng sản phẩm.
 - Lập hóa đơn bán hàng, lập phiếu bảo hành.
 - Quản lý phiếu bán hàng.
-- Xuất report hóa đơn, phiếu bảo hành.
+- Xuất report hóa đơn.
+- Thống kê dữ liệu theo biểu đồ doanh thu theo tháng, tổng doanh thu năm và số lượng khách hàng.
+- Gửi hóa đơn cho khách hàng
+- Xuất file cài đặt
+## Phần 3: Các chức năng chưa hoàn thành
+- Cửa hàng chưa có các dịch vụ dành cho khách hàng.
+- Chưa phát triển được áp dụng trên sản phẩm và chương trình khuyến mãi.
+## Hướng dẫn cài đặt
+- Mở folder Setup, mở file Setup.msi
+- Sau khi hiện hộp thoại, ấn Next
+- Chọn đường dẫn cài đặt, ấn Next
+- Ấn Install
+- Ấn Yes để tiến hành cài đặt
+- Ấn finish sẽ hiển thị ứng dụng MotoShop trên màn hình Desktop
+## Hướng dẫn sử dụng
+- Đăng nhập (tài khoản admin_ tên tài khoản: "6000" _ mật khẩu: "123456")
+- Chọn các chức năng cần sử dụng
+
+Xin cám ơn!
