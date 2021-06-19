@@ -9,20 +9,20 @@ namespace QL_CuaHangXeMay.Class
 {
     public class ThongKe_Data
     {
-        //public static int Get_DoanhThu(int month, int year)
-        //{
-        //    try
-        //    {
-        //        using (DataClassesQLDataContext dt = new DataClassesQLDataContext())
-        //        {
-        //            //return (int)dt.ThongKe_Thang_Nam(month, year).FirstOrDefault();
-        //        }
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return 0;
-        //    }
-        //}
+        public static int Get_DoanhThu(int month, int year)
+        {
+            try
+            {
+                using (CuaHang_XeMay_OFMainEntities dt = new CuaHang_XeMay_OFMainEntities())
+                {
+                    return (int)dt.ThongKe_Thang_Nam(month, year).FirstOrDefault();
+                }
+            }
+            catch (Exception)
+            {
+                return 0;
+            }
+        }
 
         public static List<ThongKe_SPMuaNhieuResult> Get_MuaNhieu(int month, int year)
         {

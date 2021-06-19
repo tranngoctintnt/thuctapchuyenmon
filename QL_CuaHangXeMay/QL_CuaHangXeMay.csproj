@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>D:\Downloads\_Getintopc.com_Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
@@ -44,6 +50,10 @@
     </Reference>
     <Reference Include="Intersoft.Crosslight.UI.DataVisualization, Version=6.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5, processorArchitecture=MSIL">
       <HintPath>..\packages\Intersoft.Crosslight.UI.DataVisualization.6.0.5000.975\lib\Intersoft.Crosslight.UI.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1449.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -65,9 +75,12 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -80,6 +93,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\CTHD_Ban.cs" />
     <Compile Include="Class\DanhMuc_Data.cs" />
     <Compile Include="Class\GiaSP_Data.cs" />
     <Compile Include="Class\HangSanXuat_Data.cs" />
@@ -95,6 +109,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClassesQL.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Enititi.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Enititi.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enititi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Enititi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enititi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Enititi.edmx</DependentUpon>
     </Compile>
     <Compile Include="Form_LoginApp.cs">
       <SubType>Form</SubType>
@@ -284,6 +313,12 @@
       <DependentUpon>UC_SaoLuu.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ThongKe\TonKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongKe\TonKho.Designer.cs">
+      <DependentUpon>TonKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThongKe\UC_ThongKeDaonhSo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -406,6 +441,9 @@
     <EmbeddedResource Include="SaoLuu\UC_SaoLuu.resx">
       <DependentUpon>UC_SaoLuu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\TonKho.resx">
+      <DependentUpon>TonKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThongKe\UC_ThongKeDaonhSo.resx">
       <DependentUpon>UC_ThongKeDaonhSo.cs</DependentUpon>
     </EmbeddedResource>
@@ -425,6 +463,13 @@
     </None>
     <None Include="DataClassesQL.dbml.layout">
       <DependentUpon>DataClassesQL.dbml</DependentUpon>
+    </None>
+    <EntityDeploy Include="Enititi.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Enititi.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Enititi.edmx.diagram">
+      <DependentUpon>Enititi.edmx</DependentUpon>
     </None>
     <None Include="HoaDon\DataSetHD.xsc">
       <DependentUpon>DataSetHD.xsd</DependentUpon>
@@ -464,9 +509,20 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Enititi.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Enititi.Context.cs</LastGenOutput>
+      <DependentUpon>Enititi.edmx</DependentUpon>
+    </Content>
+    <Content Include="Enititi.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Enititi.edmx</DependentUpon>
+      <LastGenOutput>Enititi.cs</LastGenOutput>
+    </Content>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

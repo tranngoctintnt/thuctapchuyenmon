@@ -488,20 +488,40 @@
     <Parameter Name="THANHTIEN" Parameter="tHANHTIEN" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.ThongKe_Thang_Nam" Method="ThongKe_Thang_Nam">
-    <Parameter Name="MONTH" Parameter="mONTH" Type="System.Int32" DbType="Int" />
-    <Parameter Name="YEAR" Parameter="yEAR" Type="System.Int32" DbType="Int" />
-    <ElementType Name="ThongKe_Thang_NamResult">
-      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.ThongKe_SPMuaNhieu" Method="ThongKe_SPMuaNhieu">
-    <Parameter Name="MONTH" Parameter="mONTH" Type="System.Int32" DbType="Int" />
-    <Parameter Name="YEAR" Parameter="yEAR" Type="System.Int32" DbType="Int" />
+    <Parameter Name="month_Value" Type="System.Int32" DbType="Int" />
+    <Parameter Name="year_Value" Type="System.Int32" DbType="Int" />
     <ElementType Name="ThongKe_SPMuaNhieuResult">
       <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="SL" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ThongKe_Thang_Nam" Method="ThongKe_Thang_Nam">
+    <Parameter Name="month_Value" Type="System.Int32" DbType="Int" />
+    <Parameter Name="year_Value" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ThongKe_Thang_NamResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.tongdoanhthu" Method="tongdoanhthu">
+    <ElementType Name="tongdoanhthuResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.xuatdata" Method="xuatdata">
+    <ElementType Name="xuatdataResult">
+      <Column Name="ma_HD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ten_HK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sdt_KH" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="mail_KH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="gia_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

@@ -42,25 +42,24 @@ namespace QuanLy_CuaHang.ThongKe
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 3);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
+            series1.Name = "Danh số các tháng";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1174, 400);
+            this.chart1.Size = new System.Drawing.Size(883, 330);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
             // UC_ThongKeDaonhSo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.chart1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UC_ThongKeDaonhSo";
-            this.Size = new System.Drawing.Size(1177, 406);
+            this.Size = new System.Drawing.Size(883, 330);
             this.Load += new System.EventHandler(this.UC_DanhSo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);

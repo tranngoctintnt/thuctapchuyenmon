@@ -46,7 +46,8 @@ namespace QuanLy_CuaHang.ThongKe
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 0);
+            this.chart1.Location = new System.Drawing.Point(4, 4);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -68,7 +69,7 @@ namespace QuanLy_CuaHang.ThongKe
             this.chart1.Series.Add(series3);
             this.chart1.Series.Add(series4);
             this.chart1.Series.Add(series5);
-            this.chart1.Size = new System.Drawing.Size(1174, 403);
+            this.chart1.Size = new System.Drawing.Size(1169, 398);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 

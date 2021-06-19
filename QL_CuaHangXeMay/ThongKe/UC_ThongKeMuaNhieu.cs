@@ -21,6 +21,14 @@ namespace QuanLy_CuaHang.ThongKe
 
         private void UC_SanPham_Load(object sender, EventArgs e)
         {
+            //if (this.lst.Count >= 5)
+            //{
+            //    chart1.Series["Series1"].Points.AddXY("", this.lst[0].SL.Value);
+
+
+            //    chart1.Series["Series1"].Name = this.lst[0].Ten_SP;
+
+            //}
             if (this.lst.Count >= 5)
             {
                 chart1.Series["Series1"].Points.AddXY("", this.lst[0].SL.Value);
@@ -29,12 +37,19 @@ namespace QuanLy_CuaHang.ThongKe
                 chart1.Series["Series4"].Points.AddXY("", this.lst[3].SL.Value);
                 chart1.Series["Series5"].Points.AddXY("", this.lst[4].SL.Value);
 
+
+
                 chart1.Series["Series1"].Name = this.lst[0].Ten_SP;
                 chart1.Series["Series2"].Name = this.lst[1].Ten_SP;
                 chart1.Series["Series3"].Name = this.lst[2].Ten_SP;
                 chart1.Series["Series4"].Name = this.lst[3].Ten_SP;
                 chart1.Series["Series5"].Name = this.lst[4].Ten_SP;
             }
+
+
+
+
+
         }
     }    
 }

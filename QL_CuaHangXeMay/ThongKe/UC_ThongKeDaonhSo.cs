@@ -45,10 +45,5 @@ namespace QuanLy_CuaHang.ThongKe
             chart1.Series["Danh số các tháng"].Points.AddXY("Tháng 11", this.month_11);
             chart1.Series["Danh số các tháng"].Points.AddXY("Tháng 12", this.month_12);
         }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

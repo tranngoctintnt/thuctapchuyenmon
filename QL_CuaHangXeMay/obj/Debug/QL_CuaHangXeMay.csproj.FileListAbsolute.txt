@@ -103,5 +103,10 @@ C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHang
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.HoaDon.PhieuNhap.resources
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.HoaDon.inPN.resources
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.ThongKe.UC_ThongKeDaonhSo.resources
-C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.ThongKe.UC_ThongKeMuaNhieu.resources
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.ThongKe.UC_ThongKe_Tab.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QuanLy_CuaHang.ThongKe.UC_ThongKeMuaNhieu.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\EntityFramework.dll
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\EntityFramework.xml
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.ThongKe.TonKho.resources
