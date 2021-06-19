@@ -49,7 +49,7 @@ namespace QuanLy_CuaHang.HoaDon
             this.txtID = new Guna.UI.WinForms.GunaTextBox();
             this.txtTenKh = new Guna.UI.WinForms.GunaTextBox();
             this.txtTenNV = new Guna.UI.WinForms.GunaTextBox();
-            this.dateHD = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.dateHD = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -229,7 +229,7 @@ namespace QuanLy_CuaHang.HoaDon
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 176);
+            this.label2.Location = new System.Drawing.Point(4, 176);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 22);
@@ -267,7 +267,7 @@ namespace QuanLy_CuaHang.HoaDon
             this.txtID.FocusedBaseColor = System.Drawing.Color.White;
             this.txtID.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtID.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtID.Location = new System.Drawing.Point(171, 106);
             this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
@@ -317,35 +317,23 @@ namespace QuanLy_CuaHang.HoaDon
             // 
             // dateHD
             // 
-            this.dateHD.BackColor = System.Drawing.Color.Transparent;
-            this.dateHD.BaseColor = System.Drawing.Color.White;
-            this.dateHD.BorderColor = System.Drawing.Color.Silver;
-            this.dateHD.CustomFormat = "yyyy/mm/dd";
-            this.dateHD.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.dateHD.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dateHD.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dateHD.ForeColor = System.Drawing.Color.Black;
-            this.dateHD.Location = new System.Drawing.Point(683, 176);
-            this.dateHD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dateHD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dateHD.CustomFormat = "yyyy/MM/dd";
+            this.dateHD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dateHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateHD.Location = new System.Drawing.Point(683, 181);
+            this.dateHD.Margin = new System.Windows.Forms.Padding(4);
             this.dateHD.Name = "dateHD";
-            this.dateHD.OnHoverBaseColor = System.Drawing.Color.White;
-            this.dateHD.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dateHD.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dateHD.OnPressedColor = System.Drawing.Color.Black;
-            this.dateHD.Radius = 5;
-            this.dateHD.Size = new System.Drawing.Size(223, 30);
-            this.dateHD.TabIndex = 40;
-            this.dateHD.Text = "Saturday, June 19, 2021";
-            this.dateHD.Value = new System.DateTime(2021, 6, 19, 15, 32, 17, 432);
+            this.dateHD.Size = new System.Drawing.Size(177, 30);
+            this.dateHD.TabIndex = 36;
+            this.dateHD.Value = new System.DateTime(2020, 12, 23, 0, 0, 0, 0);
             // 
             // HD_BanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dateHD);
             this.Controls.Add(this.txtTenNV);
             this.Controls.Add(this.txtTenKh);
+            this.Controls.Add(this.dateHD);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -381,6 +369,6 @@ namespace QuanLy_CuaHang.HoaDon
         private System.Windows.Forms.DataGridViewTextBoxColumn tenkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaylap;
         private System.Windows.Forms.DataGridViewButtonColumn chitiet;
-        private Guna.UI.WinForms.GunaDateTimePicker dateHD;
+        private System.Windows.Forms.DateTimePicker dateHD;
     }
 }

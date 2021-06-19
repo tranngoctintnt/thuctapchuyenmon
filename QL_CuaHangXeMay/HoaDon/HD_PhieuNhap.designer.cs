@@ -49,7 +49,7 @@ namespace QuanLy_CuaHang.HoaDon
             this.chitiet = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btn_Tim_pn = new Guna.UI.WinForms.GunaCircleButton();
             this.txt_Tim_pn = new Guna.UI.WinForms.GunaTextBox();
-            this.datepn = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.datepn = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HDpn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -317,33 +317,23 @@ namespace QuanLy_CuaHang.HoaDon
             // 
             // datepn
             // 
-            this.datepn.BaseColor = System.Drawing.Color.White;
-            this.datepn.BorderColor = System.Drawing.Color.Silver;
-            this.datepn.CustomFormat = null;
-            this.datepn.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.datepn.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.datepn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.datepn.ForeColor = System.Drawing.Color.Black;
-            this.datepn.Location = new System.Drawing.Point(696, 211);
-            this.datepn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.datepn.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.datepn.CustomFormat = "yyyy/MM/dd";
+            this.datepn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.datepn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datepn.Location = new System.Drawing.Point(696, 209);
+            this.datepn.Margin = new System.Windows.Forms.Padding(4);
             this.datepn.Name = "datepn";
-            this.datepn.OnHoverBaseColor = System.Drawing.Color.White;
-            this.datepn.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.datepn.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.datepn.OnPressedColor = System.Drawing.Color.Black;
-            this.datepn.Size = new System.Drawing.Size(223, 30);
-            this.datepn.TabIndex = 51;
-            this.datepn.Text = "Saturday, June 19, 2021";
-            this.datepn.Value = new System.DateTime(2021, 6, 19, 15, 37, 20, 556);
+            this.datepn.Size = new System.Drawing.Size(177, 30);
+            this.datepn.TabIndex = 48;
+            this.datepn.Value = new System.DateTime(2020, 12, 23, 0, 0, 0, 0);
             // 
             // HD_PhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.datepn);
             this.Controls.Add(this.txtTenNV);
             this.Controls.Add(this.txtTenncc);
+            this.Controls.Add(this.datepn);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -379,6 +369,6 @@ namespace QuanLy_CuaHang.HoaDon
         private System.Windows.Forms.DataGridViewTextBoxColumn tenkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaylap;
         private System.Windows.Forms.DataGridViewButtonColumn chitiet;
-        private Guna.UI.WinForms.GunaDateTimePicker datepn;
+        private System.Windows.Forms.DateTimePicker datepn;
     }
 }
