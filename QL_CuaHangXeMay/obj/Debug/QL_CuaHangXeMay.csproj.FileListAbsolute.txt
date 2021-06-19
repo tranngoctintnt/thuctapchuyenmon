@@ -1,7 +1,6 @@
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\QL_CuaHangXeMay.exe.config
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\QL_CuaHangXeMay.exe
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\QL_CuaHangXeMay.pdb
-C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.csprojAssemblyReference.cache
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.Properties.Resources.resources
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.csproj.GenerateResource.cache
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.csproj.CoreCompileInputs.cache

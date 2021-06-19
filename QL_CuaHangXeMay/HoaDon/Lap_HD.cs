@@ -66,7 +66,7 @@ namespace QuanLy_CuaHang.HoaDon
             }
             cbbTenHang.DisplayMember = "ten_SP";
             cbbTenHang.ValueMember = "ma_SP";
-            cbbTenHang.DataSource = dt.SanPhams.ToList();
+            cbbTenHang.DataSource = dt.select_giasp().ToList();
 
             cbbKH.DisplayMember = "ten_hk";
             cbbKH.ValueMember = "ma_kh";

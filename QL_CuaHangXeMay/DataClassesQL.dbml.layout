@@ -166,14 +166,14 @@
         <classShapeMoniker Id="e75fbd90-b7d3-407b-9061-349f69e7b67f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 9.43766150250401); (6.0625 : 8.87516150250401); (6.0625 : 2.10942460742187); (6.25 : 2.10942460742187)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.5 : 9.43766150250401); (5.81607443490112 : 9.12158706760289 : JumpStart); (5.93392556509888 : 9.00373593740513 : JumpEnd); (6.0625 : 8.87516150250401); (6.0625 : 2.10942460742187); (6.25 : 2.10942460742187)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataClassesQLDataContext/HD_BanHang/HD_BanHang_CTHD_BanHang" />
       <nodes>
         <classShapeMoniker Id="318403bf-2bac-4ac3-a39d-56b46bc3ee41" />
         <classShapeMoniker Id="6c1a990a-e7fb-4a9a-a1c3-28155a8c22f1" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 6.40625); (5.97916666666667 : 6.40625 : JumpStart); (6.14583333333333 : 6.40625 : JumpEnd); (9.25 : 6.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.5 : 6.40625); (5.79166666666667 : 6.40625 : JumpStart); (6.14583333333333 : 6.40625 : JumpEnd); (9.25 : 6.40625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataClassesQLDataContext/HD_DichVu/HD_DichVu_CTHD_DichVu" />
       <nodes>
         <classShapeMoniker Id="704c8592-e235-4b65-90bb-8141f421bd2f" />
@@ -201,7 +201,7 @@
         <classShapeMoniker Id="e75fbd90-b7d3-407b-9061-349f69e7b67f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 11.9479484049479); (5.85416666666667 : 11.9479484049479 : JumpStart); (6.02083333333333 : 11.9479484049479 : JumpEnd); (6.5 : 11.9479484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(2.75 : 11.9479484049479); (6.5 : 11.9479484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataClassesQLDataContext/NhanVien/NhanVien_CT_Quyen" />
       <nodes>
         <classShapeMoniker Id="6c6a4841-ff65-4b9f-9ed6-b1ddaf8d1751" />

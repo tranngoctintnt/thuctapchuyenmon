@@ -511,6 +511,13 @@ namespace QL_CuaHangXeMay
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
 			return ((ISingleResult<xuatdataResult>)(result.ReturnValue));
 		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.select_giasp")]
+		public ISingleResult<select_giaspResult> select_giasp()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<select_giaspResult>)(result.ReturnValue));
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ChucNang")]
@@ -7149,6 +7156,212 @@ namespace QL_CuaHangXeMay
 				if ((this._tongtien_SP != value))
 				{
 					this._tongtien_SP = value;
+				}
+			}
+		}
+	}
+	
+	public partial class select_giaspResult
+	{
+		
+		private int _ma_SP;
+		
+		private System.Nullable<int> _ma_DM;
+		
+		private System.Nullable<int> _ma_Loai;
+		
+		private System.Nullable<int> _ma_Hang;
+		
+		private string _Ten_SP;
+		
+		private System.Nullable<int> _soluong_SP;
+		
+		private int _ma_GiaSP;
+		
+		private System.Nullable<int> _ma_SP1;
+		
+		private System.Nullable<int> _gia_SP;
+		
+		private System.Nullable<System.DateTime> _ngay_BDSP;
+		
+		private System.Nullable<System.DateTime> _ngay_KTSP;
+		
+		public select_giaspResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ma_SP", DbType="Int NOT NULL")]
+		public int ma_SP
+		{
+			get
+			{
+				return this._ma_SP;
+			}
+			set
+			{
+				if ((this._ma_SP != value))
+				{
+					this._ma_SP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ma_DM", DbType="Int")]
+		public System.Nullable<int> ma_DM
+		{
+			get
+			{
+				return this._ma_DM;
+			}
+			set
+			{
+				if ((this._ma_DM != value))
+				{
+					this._ma_DM = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ma_Loai", DbType="Int")]
+		public System.Nullable<int> ma_Loai
+		{
+			get
+			{
+				return this._ma_Loai;
+			}
+			set
+			{
+				if ((this._ma_Loai != value))
+				{
+					this._ma_Loai = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ma_Hang", DbType="Int")]
+		public System.Nullable<int> ma_Hang
+		{
+			get
+			{
+				return this._ma_Hang;
+			}
+			set
+			{
+				if ((this._ma_Hang != value))
+				{
+					this._ma_Hang = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Ten_SP", DbType="NVarChar(MAX)")]
+		public string Ten_SP
+		{
+			get
+			{
+				return this._Ten_SP;
+			}
+			set
+			{
+				if ((this._Ten_SP != value))
+				{
+					this._Ten_SP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_soluong_SP", DbType="Int")]
+		public System.Nullable<int> soluong_SP
+		{
+			get
+			{
+				return this._soluong_SP;
+			}
+			set
+			{
+				if ((this._soluong_SP != value))
+				{
+					this._soluong_SP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ma_GiaSP", DbType="Int NOT NULL")]
+		public int ma_GiaSP
+		{
+			get
+			{
+				return this._ma_GiaSP;
+			}
+			set
+			{
+				if ((this._ma_GiaSP != value))
+				{
+					this._ma_GiaSP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ma_SP1", DbType="Int")]
+		public System.Nullable<int> ma_SP1
+		{
+			get
+			{
+				return this._ma_SP1;
+			}
+			set
+			{
+				if ((this._ma_SP1 != value))
+				{
+					this._ma_SP1 = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_gia_SP", DbType="Int")]
+		public System.Nullable<int> gia_SP
+		{
+			get
+			{
+				return this._gia_SP;
+			}
+			set
+			{
+				if ((this._gia_SP != value))
+				{
+					this._gia_SP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngay_BDSP", DbType="Date")]
+		public System.Nullable<System.DateTime> ngay_BDSP
+		{
+			get
+			{
+				return this._ngay_BDSP;
+			}
+			set
+			{
+				if ((this._ngay_BDSP != value))
+				{
+					this._ngay_BDSP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngay_KTSP", DbType="Date")]
+		public System.Nullable<System.DateTime> ngay_KTSP
+		{
+			get
+			{
+				return this._ngay_KTSP;
+			}
+			set
+			{
+				if ((this._ngay_KTSP != value))
+				{
+					this._ngay_KTSP = value;
 				}
 			}
 		}

@@ -29,14 +29,13 @@ namespace QuanLy_CuaHang.HoaDon
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HD_PhieuNhap));
             this.txtTenNV = new Guna.UI.WinForms.GunaTextBox();
             this.txtTenncc = new Guna.UI.WinForms.GunaTextBox();
-            this.datepn = new System.Windows.Forms.DateTimePicker();
             this.txtID = new Guna.UI.WinForms.GunaTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@ namespace QuanLy_CuaHang.HoaDon
             this.chitiet = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btn_Tim_pn = new Guna.UI.WinForms.GunaCircleButton();
             this.txt_Tim_pn = new Guna.UI.WinForms.GunaTextBox();
+            this.datepn = new Guna.UI.WinForms.GunaDateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_HDpn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,9 +62,9 @@ namespace QuanLy_CuaHang.HoaDon
             this.txtTenNV.FocusedBaseColor = System.Drawing.Color.White;
             this.txtTenNV.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtTenNV.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTenNV.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenNV.Location = new System.Drawing.Point(163, 204);
-            this.txtTenNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.PasswordChar = '\0';
             this.txtTenNV.Radius = 10;
@@ -81,27 +81,15 @@ namespace QuanLy_CuaHang.HoaDon
             this.txtTenncc.FocusedBaseColor = System.Drawing.Color.White;
             this.txtTenncc.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtTenncc.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTenncc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenncc.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenncc.Location = new System.Drawing.Point(696, 142);
-            this.txtTenncc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenncc.Margin = new System.Windows.Forms.Padding(4);
             this.txtTenncc.Name = "txtTenncc";
             this.txtTenncc.PasswordChar = '\0';
             this.txtTenncc.Radius = 10;
             this.txtTenncc.SelectedText = "";
             this.txtTenncc.Size = new System.Drawing.Size(213, 37);
             this.txtTenncc.TabIndex = 49;
-            // 
-            // datepn
-            // 
-            this.datepn.CustomFormat = "yyyy/MM/dd";
-            this.datepn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.datepn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datepn.Location = new System.Drawing.Point(696, 209);
-            this.datepn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.datepn.Name = "datepn";
-            this.datepn.Size = new System.Drawing.Size(177, 30);
-            this.datepn.TabIndex = 48;
-            this.datepn.Value = new System.DateTime(2020, 12, 23, 0, 0, 0, 0);
             // 
             // txtID
             // 
@@ -112,9 +100,9 @@ namespace QuanLy_CuaHang.HoaDon
             this.txtID.FocusedBaseColor = System.Drawing.Color.White;
             this.txtID.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtID.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtID.Location = new System.Drawing.Point(163, 142);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID.Margin = new System.Windows.Forms.Padding(4);
             this.txtID.Name = "txtID";
             this.txtID.PasswordChar = '\0';
             this.txtID.Radius = 10;
@@ -125,52 +113,52 @@ namespace QuanLy_CuaHang.HoaDon
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.Location = new System.Drawing.Point(520, 211);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 28);
+            this.label4.Size = new System.Drawing.Size(81, 22);
             this.label4.TabIndex = 46;
             this.label4.Text = "Ngày lập";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.Location = new System.Drawing.Point(520, 151);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 28);
+            this.label3.Size = new System.Drawing.Size(116, 22);
             this.label3.TabIndex = 45;
             this.label3.Text = "Nhà cung cấp";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(13, 211);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 28);
+            this.label2.Size = new System.Drawing.Size(127, 22);
             this.label2.TabIndex = 44;
             this.label2.Text = "Tên Nhân Viên";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(6, 151);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 28);
+            this.label1.Size = new System.Drawing.Size(126, 22);
             this.label1.TabIndex = 43;
             this.label1.Text = "Mã phiếu nhập";
             // 
             // dgv_HDpn
             // 
             this.dgv_HDpn.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.dgv_HDpn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgv_HDpn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_HDpn.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -179,14 +167,14 @@ namespace QuanLy_CuaHang.HoaDon
             this.dgv_HDpn.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_HDpn.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgv_HDpn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_HDpn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_HDpn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_HDpn.ColumnHeadersHeight = 21;
             this.dgv_HDpn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahd,
@@ -194,18 +182,18 @@ namespace QuanLy_CuaHang.HoaDon
             this.tenkh,
             this.ngaylap,
             this.chitiet});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_HDpn.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_HDpn.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_HDpn.EnableHeadersVisualStyles = false;
             this.dgv_HDpn.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_HDpn.Location = new System.Drawing.Point(-4, 314);
-            this.dgv_HDpn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_HDpn.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_HDpn.Name = "dgv_HDpn";
             this.dgv_HDpn.ReadOnly = true;
             this.dgv_HDpn.RowHeadersVisible = false;
@@ -272,9 +260,9 @@ namespace QuanLy_CuaHang.HoaDon
             // chitiet
             // 
             this.chitiet.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.NullValue = "Chi Tiết";
-            this.chitiet.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = "Chi Tiết";
+            this.chitiet.DefaultCellStyle = dataGridViewCellStyle3;
             this.chitiet.HeaderText = "Chi Tiết";
             this.chitiet.MinimumWidth = 6;
             this.chitiet.Name = "chitiet";
@@ -295,7 +283,7 @@ namespace QuanLy_CuaHang.HoaDon
             this.btn_Tim_pn.Image = ((System.Drawing.Image)(resources.GetObject("btn_Tim_pn.Image")));
             this.btn_Tim_pn.ImageSize = new System.Drawing.Size(20, 20);
             this.btn_Tim_pn.Location = new System.Drawing.Point(957, 76);
-            this.btn_Tim_pn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Tim_pn.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Tim_pn.Name = "btn_Tim_pn";
             this.btn_Tim_pn.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btn_Tim_pn.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -316,9 +304,9 @@ namespace QuanLy_CuaHang.HoaDon
             this.txt_Tim_pn.FocusedBaseColor = System.Drawing.Color.White;
             this.txt_Tim_pn.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txt_Tim_pn.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txt_Tim_pn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_Tim_pn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txt_Tim_pn.Location = new System.Drawing.Point(696, 76);
-            this.txt_Tim_pn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Tim_pn.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Tim_pn.Name = "txt_Tim_pn";
             this.txt_Tim_pn.PasswordChar = '\0';
             this.txt_Tim_pn.Radius = 12;
@@ -327,13 +315,35 @@ namespace QuanLy_CuaHang.HoaDon
             this.txt_Tim_pn.TabIndex = 40;
             this.txt_Tim_pn.TextChanged += new System.EventHandler(this.txt_Tim_pn_TextChanged);
             // 
+            // datepn
+            // 
+            this.datepn.BaseColor = System.Drawing.Color.White;
+            this.datepn.BorderColor = System.Drawing.Color.Silver;
+            this.datepn.CustomFormat = null;
+            this.datepn.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.datepn.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.datepn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.datepn.ForeColor = System.Drawing.Color.Black;
+            this.datepn.Location = new System.Drawing.Point(696, 211);
+            this.datepn.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.datepn.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.datepn.Name = "datepn";
+            this.datepn.OnHoverBaseColor = System.Drawing.Color.White;
+            this.datepn.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.datepn.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.datepn.OnPressedColor = System.Drawing.Color.Black;
+            this.datepn.Size = new System.Drawing.Size(223, 30);
+            this.datepn.TabIndex = 51;
+            this.datepn.Text = "Saturday, June 19, 2021";
+            this.datepn.Value = new System.DateTime(2021, 6, 19, 15, 37, 20, 556);
+            // 
             // HD_PhieuNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.datepn);
             this.Controls.Add(this.txtTenNV);
             this.Controls.Add(this.txtTenncc);
-            this.Controls.Add(this.datepn);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -342,7 +352,7 @@ namespace QuanLy_CuaHang.HoaDon
             this.Controls.Add(this.dgv_HDpn);
             this.Controls.Add(this.btn_Tim_pn);
             this.Controls.Add(this.txt_Tim_pn);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HD_PhieuNhap";
             this.Size = new System.Drawing.Size(1188, 740);
             this.Load += new System.EventHandler(this.HD_PhieuNhap_Load);
@@ -356,7 +366,6 @@ namespace QuanLy_CuaHang.HoaDon
 
         private Guna.UI.WinForms.GunaTextBox txtTenNV;
         private Guna.UI.WinForms.GunaTextBox txtTenncc;
-        private System.Windows.Forms.DateTimePicker datepn;
         private Guna.UI.WinForms.GunaTextBox txtID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -370,5 +379,6 @@ namespace QuanLy_CuaHang.HoaDon
         private System.Windows.Forms.DataGridViewTextBoxColumn tenkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaylap;
         private System.Windows.Forms.DataGridViewButtonColumn chitiet;
+        private Guna.UI.WinForms.GunaDateTimePicker datepn;
     }
 }
