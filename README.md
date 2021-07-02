@@ -35,7 +35,11 @@
 - Ấn Yes để tiến hành cài đặt
 - Ấn finish sẽ hiển thị ứng dụng MotoShop trên màn hình Desktop
 ## Hướng dẫn sử dụng
-- Đăng nhập (tài khoản admin_ tên tài khoản: "6000" _ mật khẩu: "123456")
+- Đăng nhập quyền quản lý người dùng (tài khoản: "6000" _ mật khẩu: "123456")
+- Đăng nhập quyền giám đốc (tài khoản: "6001" _ mật khẩu: "123456")
+- Đăng nhập quyền quản lý Thống Kê (tài khoản: "6002" _ mật khẩu: "123456")
+- Đăng nhập quyền quản lý bán hàng (tài khoản: "6003" _ mật khẩu: "123456")
+
 - Chọn các chức năng cần sử dụng
 
 Xin cám ơn!
