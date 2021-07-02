@@ -91,7 +91,16 @@ namespace QuanLy_CuaHang.SanPham
 
         private void btn_Xoa_GiaSP_Click(object sender, EventArgs e)
         {
-            GiaSP_Data.Delete_GiaSP(int.Parse(Get_IdGiaSP()));
+            
+            if (Get_IdGiaSP() != null)
+            {
+                GiaSP_Data.Delete_GiaSP(int.Parse(Get_IdGiaSP()));
+                try
+                {
+                    dgv_GiaSP.DataSource = GiaSP_Data.Get_GiaSPList();
+                }
+                catch (Exception) { }
+            }
 
         }
 

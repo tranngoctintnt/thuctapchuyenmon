@@ -192,7 +192,16 @@ namespace QuanLy_CuaHang.SanPham
 
         private void btn_Xoa_SP_Click(object sender, EventArgs e)
         {
-            SanPham_Data.Delete_SanPham(int.Parse(Get_IdSP()));
+            if (Get_IdSP() != null)
+            {
+                SanPham_Data.Delete_SanPham(int.Parse(Get_IdSP()));
+                try
+                {
+                    dgv_SanPham.DataSource = SanPham_Data.Get_SanPhamList();
+                }
+                catch (Exception) { }
+            }
+           
 
         }
 

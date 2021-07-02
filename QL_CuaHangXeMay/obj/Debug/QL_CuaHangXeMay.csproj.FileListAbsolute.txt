@@ -109,3 +109,4 @@ C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\EntityFram
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\EntityFramework.xml
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.ThongKe.TonKho.resources
+C:\Users\MyPC\source\repos\thuctapchuyenmon\QL_CuaHangXeMay\obj\Debug\QL_CuaHangXeMay.csprojAssemblyReference.cache

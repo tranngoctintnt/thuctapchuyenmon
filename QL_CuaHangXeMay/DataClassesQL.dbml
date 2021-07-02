@@ -418,22 +418,6 @@
       <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.inHd" Method="inHd">
-    <Parameter Name="mahd" Type="System.Int32" DbType="Int" />
-    <ElementType Name="inHdResult">
-      <Column Name="ma_HD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ten_HK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="sdt_KH" Type="System.String" DbType="Char(10)" CanBeNull="true" />
-      <Column Name="mail_KH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="gia_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.selectPN" Method="selectPN">
     <Parameter Name="mapn" Type="System.Int32" DbType="Int" />
     <ElementType Name="selectPNResult">
@@ -537,6 +521,22 @@
       <Column Name="gia_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ngay_BDSP" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="ngay_KTSP" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.inHd" Method="inHd">
+    <Parameter Name="mahd" Type="System.Int32" DbType="Int" />
+    <ElementType Name="inHdResult">
+      <Column Name="ma_HD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ten_HK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="sdt_KH" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="mail_KH" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ten_NV" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ngaylap_HD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ma_SP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Ten_SP" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="gia_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soluong_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tongtien_SP" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>
